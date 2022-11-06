@@ -1,0 +1,614 @@
+@font-face{
+    font-family: PressStart2P;
+    src: url(PressStart2PRegular.ttf);
+}
+
+.logo{
+    display: inline-block;
+}
+
+.white_logo{
+    display: inline-block;
+    padding-bottom: 2px;
+    margin-right: -6px;
+}
+
+#search{
+    display: inline-block;
+    margin-left: 70px;
+    width: 500px;
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    padding-left: 10px;
+    padding-top: 5px;
+    font-family: Arial;
+    letter-spacing: -0.5px;
+    border: 2.5px solid rgb(73, 73, 73);
+}
+
+#search :focus{
+    display: inline-block;
+    margin-left: 90px;
+    width: 500px;
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    padding-left: 10px;
+    padding-top: 5px;
+    font-family: Arial;
+    letter-spacing: -0.5px;
+    border: 2.5px solid rgb(73, 73, 73);
+}
+
+#register_basket{
+    margin-left: 15px;
+    display: inline-block;
+}
+
+#register_basket li{
+    display: inline-block;
+    font-size: 15px;
+    font-family: Arial;
+    letter-spacing: -0.5px;
+}
+
+#links li{
+    display: inline-block;
+}
+
+.sales_banner{
+    margin-top: 30px;
+    background-color: rgb(96, 73, 166);
+    background-image: linear-gradient(165deg, rgb(46, 255, 126), rgb(139, 45, 210));
+    width: 1300px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.slogan{
+    background-color: red;
+    width: 100%;
+    height: 30px;
+    background-image: linear-gradient(to right, rgb(75, 4, 255), rgb(255, 20, 208));
+}
+
+#phrase{
+    margin-left: 595px;
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+.top_section{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 1000px;
+}
+
+#basket{
+    margin-left: 20px;
+    text-decoration: none;
+    color:  rgb(50, 50, 50);
+    font-weight: bold;
+}
+
+#sign_register{
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    font-weight: bold;
+}
+
+.nav_bar{
+    margin-top: 15px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(48, 48, 48);
+}
+
+#links li{
+    margin-top: 3px;
+    margin-right: 150px;
+    margin-left: 40px;
+}
+
+#links li a{
+    font-family: Helvetica;
+    color: white;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+    
+
+}#links li a:hover{
+    font-family: Helvetica;
+    color: white;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+    background-color: rgb(81, 81, 81);
+}
+
+#deals_title{
+    padding-top: 55px;
+    font-size: 80px;
+    font-family: 'Archivo Black';
+    color: white;
+    letter-spacing: -1px;
+    transform: scale(1.15,1);
+}
+
+#deals_slogan{
+    margin-top: -10px;
+    color: white;
+    letter-spacing: -1.2px;
+    font-family: Arial;
+    transform: scale(1.15,1);
+}
+
+.top_selling_sect{
+    margin-top: 40px;
+    width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#top_selling_title{
+    font-size: 25px;
+    font-family: 'Archivo Black';
+    letter-spacing: -1px;
+    color: rgb(47, 47, 47);
+
+}
+
+#top_selling_slogan{
+    font-size: 18px;
+    margin-top: -5px;
+    text-decoration: underline;
+    font-family: Arial;
+    letter-spacing: -1px;
+}
+
+.single_box{
+    background-color: rgb(194, 194, 194);
+    width: 150px;
+    height: 200px;
+}
+
+.game_name{
+    margin-top: -10px;
+    font-family: Arial;
+    letter-spacing: -1px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(88, 88, 88);
+}
+
+.game_price{
+    transform: scale(0.7,1);
+    margin-top: 10px;
+    margin-left: -28px;
+    font-family: 'Archivo Black';
+    color: rgb(47, 47, 47);
+}
+
+.game_section{
+    margin-right: 101px;
+    margin-bottom: 60px;
+    display: inline-block;
+}
+
+.game_collection{
+    margin-top: 60px;
+    margin-left: 110px;
+}
+
+.logo{
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+    margin-left: -70px;
+}
+
+.top_section{
+    margin-left: 315px;
+}
+
+#phrase{
+    color: white;
+    font-family: Arial;
+    letter-spacing: -0.5px;
+    font-size: 17px;
+}
+
+.sales_banner_img{
+    margin-top: 30px;
+    margin-left: 120px;
+}
+
+.reg_form{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    width: 500px;
+    height: 570px;
+    border: 1px solid rgb(73, 73, 73);
+}
+
+.signin_form{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    width: 500px;
+    height: 480px;
+    border: 1px solid rgb(73, 73, 73);
+}
+
+
+.category{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 110px;
+}
+
+.sort_by_filter{
+    display: inline-block;
+    margin-left: 790px;
+}
+
+.category{
+    font-family: Arial;
+    letter-spacing: -0.5px;
+}
+
+#sort_by_label{
+    font-family: Arial;
+    letter-spacing: -0.5px;
+    margin-right: 10px;
+}
+
+#filter_title{
+    font-family: 'Archivo Black';
+    font-size: 19px;
+    letter-spacing: -0.5px;
+    color: rgb(41, 41, 41);
+}
+
+#filter_label{
+    font-family: Arial;
+    letter-spacing: -0.5px;
+    color: rgb(72, 72, 72);
+    transform: scale(1,0.965);
+    font-weight: bold;
+}
+
+#sort_by{
+    font-family: Arial;
+    letter-spacing: -0.5px;
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    padding-left: 3px;
+    border-radius: 7px;
+    width: 160px;
+    font-weight: bold;
+    color: rgb(29, 29, 29);
+    border: 2.3px solid rgb(73, 73, 73);
+}
+
+#line{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+#filter_line{
+    width: 270px;
+    height: 0.3px;
+}
+
+.input_fields{
+    width: 500px;
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(141, 141, 141);
+    padding-left: 10px;
+    padding-top: 5px;
+    font-family: Arial;
+    letter-spacing: -0.5px;
+    margin-top: 6px;
+    margin-left: 139px;
+    width: 340px;
+    color: rgb(76, 76, 76);
+}
+
+.input_fields :focus{
+    width: 500px;
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(141, 141, 141);
+    padding-left: 10px;
+    padding-top: 5px;
+    font-family: Arial;
+    letter-spacing: -0.5px;
+    margin-top: 6px;
+    margin-left: 139px;
+    width: 340px;
+    color: rgb(30, 30, 30);
+}
+
+#email_label{
+    margin-left: 140px;
+    margin-top: 10px;
+    margin-bottom: -30px;
+    font-weight: bold;
+    font-family: Arial;
+    color: rgb(55, 0, 81);
+}
+
+#password_label{
+    margin-left: 140px;
+    margin-top: 10px;
+    margin-bottom: -30px;
+    font-weight: bold;
+    font-family: Arial;
+    color: rgb(55, 0, 81);
+
+}
+
+#confirm_label{
+    margin-left: 140px;
+    margin-top: 10px;
+    margin-bottom: -70px;
+    font-weight: bold;
+    font-family: Arial;
+    color: rgb(55, 0, 81);
+}
+
+#sign_in_question{
+    margin-left: 70px;
+    margin-top: 25px;
+    margin-bottom: -70px;
+    font-weight: bold;
+    font-family: Arial;
+    color: rgb(85, 0, 125);
+    text-decoration: underline;
+}
+
+.group_input_fields{
+    margin-left: -70px;
+}
+
+#create_account{
+    font-family: 'Archivo Black';
+    margin-left: 70px;
+    font-size: 30px;
+}
+
+#create_account_caption{
+    font-family: 'Arial';
+    margin-left: 70px;
+    font-size: 18px;
+}
+
+#search_button{
+    padding-top: 4px;
+    margin-left: 6px;
+    height: 45px;
+    width: 50px;
+    background-color:  rgb(73, 73, 73);
+    border: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    border: 2.5px solid rgb(32, 32, 32);
+}
+
+#search_button:hover{
+    padding-top: 4px;
+    margin-left: 6px;
+    height: 45px;
+    width: 50px;
+    border: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    border: 2.5px solid rgb(32, 32, 32);
+    background-color:  rgb(49, 49, 49);
+}
+
+.nav_bar_help{
+    margin-top: 1px;
+    margin-left: 1050px;
+    width: 500px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+#help_links li{
+    margin-top: 3px;
+    margin-right: 40px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+#help_links li a{
+    font-family: Helvetica;
+    color: rgb(33, 33, 33);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+
+}
+    
+#help_links li a:hover{
+    font-family: Helvetica;
+    color: rgb(33, 33, 33);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.browse_games{
+    display: inline-block;
+    width: 1200px;
+    margin-top: 0px;
+    margin-left: -20px;
+}
+
+.filter_buttons{
+    height: 40px;
+    display: block;
+    width: 270px;
+    margin-bottom: 5px;
+    text-align: left;
+    padding-left: 10px;
+    background-color: rgb(84, 84, 84);
+    color: white;
+    border: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.3px;
+    transform: scale(1,0.965);
+    border-right: 12px solid transparent
+}
+
+.filter_buttons:focus{
+    height: 40px;
+    display: block;
+    width: 270px;
+    margin-bottom: 5px;
+    text-align: left;
+    padding-left: 10px;
+    background-color: rgb(84, 84, 84);
+    color: white;
+    border: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.3px;
+    transform: scale(1,0.965);
+    border-right: 12px solid transparent;
+}
+
+.filter_buttons:hover{
+    height: 40px;
+    display: block;
+    width: 270px;
+    margin-bottom: 5px;
+    text-align: left;
+    padding-left: 10px;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    border: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.3px;
+    transform: scale(1,0.965);
+}
+
+.filtered_search_buttons{
+    margin-left: 13px;
+    margin-top: 20px;
+}
+
+.filtered_search{
+    width: 300px;
+    background-color: rgb(240, 240, 240);
+    display: inline-block;
+    display: flex;
+}
+
+.whole_sect{
+    display: flex;
+}
+
+#signin_button{
+    margin-top: 20px;
+    height: 40px;
+    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-right: 10px;
+    font-size: 17px;
+    background-color: rgb(75, 0, 128);
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+#signin_button:hover{
+    margin-top: 20px;
+    height: 40px;
+    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-right: 10px;
+    font-size: 17px;
+    background-color: rgb(31, 0, 53);
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+#sort_by option{
+    background-color: rgb(255, 255, 255);
+}
+
+#sort_by option:focus{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+#sort_by select{
+    margin-bottom: 10px;
+}
+
+#status{
+    margin-top: 50px;
+    margin-left: 43%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.atb_button{
+    background-color: rgb(55, 154, 88);
+    border: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+}
+
+.atb_button:hover{
+    background-color: rgb(32, 92, 52);
+    border: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+}
+
+#sales_banner_img_pxn{
+    margin-top: 15px;
+    margin-left: 120px;
+}
