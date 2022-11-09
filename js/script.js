@@ -26,6 +26,6 @@ function add_to_cart (item){
     selected_game.append(game_title);
     var empty_container = document.getElementById('empty_container');
     empty_container.append(selected_game)
-    //basket functionality is in development.
-
 }
+
+//basket functionality is in development.
