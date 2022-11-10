@@ -22,21 +22,21 @@
                 <h6 id = "phrase"> <img class = "white_logo" src = "images/UGAME logo (white).png" width = "100" height = "25"> Discover our latest releases.</h6>
             </div>
             <div class = "top_section">
-                <a class = "logo" href="home.html"> <img class = "logo" src = "images/UGAME logo.png" width = "200" height = "50"> </a>
+                <a class = "logo" href="index"> <img class = "logo" src = "images/UGAME logo.png" width = "200" height = "50"> </a>
                 <input id = search type="text" placeholder="Search games..." name="search"> 
                 <button id = "search_button" type="button">Go</button>
                 <ul id=register_basket>
-                    <li><a id="sign_register" href="register.html"> <i class="fa-solid fa-user-large"></i> Sign in or Register </a></li>
-                    <li><a id="basket" href="basket.html"> <i class="fa-solid fa-basket-shopping"></i> Basket</a></li>
+                    <li><a id="sign_register" href="register"> <i class="fa-solid fa-user-large"></i> Sign in or Register </a></li>
+                    <li><a id="basket" href="basket"> <i class="fa-solid fa-basket-shopping"></i> Basket</a></li>
                 </ul>
             </div>
             <div class="nav_bar">
                 <nav>
                     <ul id=links>
-                        <li><a id="playstation" href="playstation.html">PLAYSTATION</a></li>
-                        <li><a id="xbox" href="xbox.html">XBOX</a></li>
-                        <li><a id="nintendo" href="nintendo.html">NINTENDO</a></li>
-                        <li><a id="nintendo" href="deals.html">DEALS</a></li>
+                        <li><a id="playstation" href="playstation">PLAYSTATION</a></li>
+                        <li><a id="xbox" href="xbox">XBOX</a></li>
+                        <li><a id="nintendo" href="nintendo">NINTENDO</a></li>
+                        <li><a id="nintendo" href="deals">DEALS</a></li>
                     </ul>
                 </nav>
             </div>
