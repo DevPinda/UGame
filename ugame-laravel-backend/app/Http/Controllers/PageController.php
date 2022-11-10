@@ -14,7 +14,7 @@ class PageController extends Controller {
     }
 
     function playstation(){
-        return view('nintendo');
+        return view('playstation');
     }
 
     function xbox(){
