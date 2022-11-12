@@ -31,3 +31,9 @@ Route::get('/signin', [PageController::class,'signin']);
 Route::get('/deals', [PageController::class,'deals']);
 
 Route::get('/register', [PageController::class,'register']);
+
+Route::get('/order', [PageController::class, 'insertform']);
+
+Route::post('/create', [PageController::class, 'order_insert']);
+
+Route::post('/order_table_Create', [PageController:: class, 'order_create_table']);
