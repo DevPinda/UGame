@@ -7,6 +7,7 @@ This is the Repository for the CS2TP module Team Project 1, Group 27; below We h
 - Victorymp (Victory Mpokosa)
 - JahrayFacey (Jahray Facey)
 - AR127 (Awais Riaz)
+- Shinga1 (Shingai Mutumbi)
 <br></br>
 <b>We will commit all code to the main branch of this repository, all commit history will be viewable on the repository, including names and description of commits.</b>
 <br></br>
