@@ -28,7 +28,7 @@
                 <ul id=register_basket>
                     <li><a id="sign_register" href="register"> <i class="fa-solid fa-user-large"></i> Sign in or Register </a></li>
                     <li><a id="basket" href="basket"> <i class="fa-solid fa-basket-shopping"></i> Basket</a></li>
-                </ul>
+                </ul> 
             </div>
             <div class="nav_bar">
                 <nav>
