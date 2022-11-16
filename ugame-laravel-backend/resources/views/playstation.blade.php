@@ -205,10 +205,12 @@
                         <h6 class = "game_name"> Last of Us Part II <br> PlayStation 4</h4>
                         <button onclick = "add_to_cart (game13)" class = "atb_button" type="button">Add to Basket</button>
                     </div>
-                </div>       
+                </div>    
             </div>
-        </div>
-        <div id = "empty_container">
+            <div id = "empty_container">
+                <h5 id = product_num></h5>
+                <h5 id = price_total></h5>
+            </div>   
         </div>
     </body>
 </html>
