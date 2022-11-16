@@ -612,3 +612,9 @@
     margin-top: 15px;
     margin-left: 120px;
 }
+
+#empty_container{
+    margin-top: 20px;
+    margin-left: -30px;
+    width: 100px;
+}
