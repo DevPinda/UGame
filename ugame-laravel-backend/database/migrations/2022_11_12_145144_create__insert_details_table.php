@@ -25,6 +25,8 @@ return new class extends Migration
                     $table->text('Stock');
                     $table->text('Orders');
                     $table->decimal('Price');
+                
+                    
             }
 
         );
