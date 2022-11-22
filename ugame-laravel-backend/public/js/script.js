@@ -10,7 +10,7 @@ var cart_total = 0;
 var price_total_rounded = 0;
 
 function add_to_cart (item){
-    price_total_rounded = parseFloat(price_total_rounded.toFixed(2));
+    empty_container.style.display = 'block'
     added_item_id += 1;
     var all_games = document.getElementsByClassName('game_section');
     var selected_game = document.createElement('div');
@@ -34,24 +34,26 @@ function add_to_cart (item){
 
     cart_total += 1;
     game_price = parseFloat(game_price.innerText.substring(1));
-    round_game_price = parseFloat(game_price.toFixed(2));
+    round_game_price = parseFloat(game_price);
     price_total_rounded += round_game_price;
-
+    price_total_rounded = parseFloat(price_total_rounded.toFixed(2));
     price_total_display.innerText = 'Price Total: ' + price_total_rounded;
     product_num.innerText = 'Items: ' + cart_total; 
+    localStorage.setItem()
 }
 
 function delete_game(item){
-    price_total_rounded = parseFloat(price_total_rounded.toFixed(2));
     del_item = document.getElementById(item);
     game_price = del_item.children[0].innerText;
     game_price_convert = parseFloat(game_price.substring(1));
     round_game_price = parseFloat(game_price_convert.toFixed(2));
     cart_total -= 1;
     price_total_rounded = price_total_rounded - round_game_price;
+    price_total_rounded = parseFloat(price_total_rounded.toFixed(2));
     price_total_display.innerText = 'Price Total: ' + price_total_rounded;
     product_num.innerText = 'Items: ' + cart_total; 
     document.getElementById(item).remove();
 }
 
 //basket functionality is in development.
+
