@@ -533,6 +533,7 @@
 
 .filtered_search{
     width: 300px;
+    min-height: 600px;
     background-color: rgb(240, 240, 240);
     display: inline-block;
     display: flex;
@@ -635,4 +636,21 @@
 
 #empty_container{
     display: none;
+}
+
+#reset_filter_button{
+    border: none;
+    text-decoration: underline;
+    color: rgb(95, 95, 95);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#reset_filter_button:hover{
+    border: none;
+    text-decoration: underline;
+    color: rgb(95, 95, 95);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
 }
