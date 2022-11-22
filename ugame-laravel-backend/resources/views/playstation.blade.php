@@ -62,7 +62,7 @@
                         <option>+ Sport</option>
                     </select>
 
-                    <select  class = filter_buttons type="button">
+                    <select  class = filter_buttons id = filter_price type="button">
                         <option disabled selected>Price Range</option>
                         <option>£0.00 - £49.99</option>
                         <option>£50.00 - £99.99</option>
@@ -70,7 +70,7 @@
                         <option>£250.00 - £299.99</option>
                     </select>
 
-                    <select  class = filter_buttons type="button">
+                    <select  class = filter_buttons id = filter_age type="button">
                         <option disabled selected>Age Rating</option>
                         <option>Age 12+</option>
                         <option>Age 16+</option>
@@ -79,11 +79,12 @@
                         <option>Age 3+</option>
                     </select>
 
-                    <select  class = filter_buttons type="button">
+                    <select  class = filter_buttons id = filter_platform type="button">
                     <option disabled selected>Platform</option>
                         <option>PlayStation 5</option>
                         <option>PlayStation 4</option>
                     </select>
+                    <button id = "reset_filter_button">Clear Filters</button>
                 </div>
             </div>
 
@@ -222,6 +223,15 @@
                         <h6 class = "game_name"> Last of Us Part II <br> PlayStation 4</h4>
                         <p id = "game_attributes">(Action Adventure/18+)</p>
                         <button onclick = "add_to_cart (game13)" class = "atb_button" type="button">Add to Basket</button>
+                    </div>
+
+                    <div class = "game_section" id = "game14">
+                        <div class = "single_box">
+                        </div>
+                        <h4 class = "game_price"> £70.99 </h4>
+                        <h6 class = "game_name"> God of War Ragnorok <br> PlayStation 5</h4>
+                        <p id = "game_attributes">(Action Adventure/18+)</p>
+                        <button onclick = "add_to_cart (game14)" class = "atb_button" type="button">Add to Basket</button>
                     </div>
                 </div>    
             </div>

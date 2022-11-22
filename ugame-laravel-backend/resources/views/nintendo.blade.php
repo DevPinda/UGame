@@ -61,7 +61,7 @@
                         <option>+ Sport</option>
                     </select>
 
-                    <select  class = filter_buttons type="button">
+                    <select  class = filter_buttons id = filter_price type="button">
                         <option disabled selected>Price Range</option>
                         <option>£0.00 - £49.99</option>
                         <option>£50.00 - £99.99</option>
@@ -69,7 +69,7 @@
                         <option>£250.00 - £299.99</option>
                     </select>
 
-                    <select  class = filter_buttons type="button">
+                    <select  class = filter_buttons id = filter_age type="button">
                         <option disabled selected>Age Rating</option>
                         <option>Age 12+</option>
                         <option>Age 16+</option>
@@ -78,10 +78,11 @@
                         <option>Age 3+</option>
                     </select>
 
-                    <select  class = filter_buttons type="button">
+                    <select  class = filter_buttons id = filter_platform type="button">
                     <option disabled selected>Platform</option>
                         <option>Nintendo Switch</option>
                     </select>
+                    <button id = "reset_filter_button">Clear Filters</button>
                 </div>
             </div>
 
