@@ -3,6 +3,8 @@
  
 <head>
     <script defer src="js/script.js"></script>
+    <script defer src="js/search.js"></script>
+    <script defer src="js/filter.js"></script>
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
@@ -43,42 +45,42 @@
         </header>
 
         <div class = "whole_sect">
-            <div class = "filtered_search"> 
+        <div class = "filtered_search"> 
                 <div class = "filtered_search_buttons">
                     <h3 id = "filter_title">Filter</h3>
                     <hr id = "filter_line" size="3" width="90%" color="black"> 
-                    <label id = "filter_label">Genre</label>
-                    <select  class = filter_buttons type="button">
-                        <option value="best_sellers">+ Action Adventure</option>
-                        <option value="A-Z">+ Platformer</option>
-                        <option value="price_lth">+ RPG</option>
-                        <option value="price_htl">+ Horror</option>
-                        <option value="price_htl">+ Shooter</option>
-                        <option value="price_htl">+ Fighting</option>
-                        <option value="price_htl">+ Racing</option>
-                        <option value="price_htl">+ Sport</option>
+                    <select  class = filter_buttons id = filter_genre type="button">
+                        <option disabled selected>Genre</option>
+                        <option>+ Action Adventure</option>
+                        <option>+ Platformer</option>
+                        <option>+ RPG</option>
+                        <option>+ Horror</option>
+                        <option>+ Shooter</option>
+                        <option>+ Fighting</option>
+                        <option>+ Racing</option>
+                        <option>+ Sport</option>
                     </select>
 
-                    <label id = "filter_label">Price Range</label>
                     <select  class = filter_buttons type="button">
-                        <option value="best_sellers">£0.00 - £49.99</option>
-                        <option value="A-Z">£50.00 - £99.99</option>
-                        <option value="price_lth">£200.00 - £249.99</option>
-                        <option value="price_htl">£250.00 - £299.99</option>
+                        <option disabled selected>Price Range</option>
+                        <option>£0.00 - £49.99</option>
+                        <option>£50.00 - £99.99</option>
+                        <option>£200.00 - £249.99</option>
+                        <option>£250.00 - £299.99</option>
                     </select>
 
-                    <label id = "filter_label">Age Rating</label>
                     <select  class = filter_buttons type="button">
-                        <option value="best_sellers">Age 12+</option>
-                        <option value="A-Z">Age 16+</option>
-                        <option value="price_lth">Age 18+</option>
-                        <option value="price_htl">Age 7+</option>
-                        <option value="price_htl">Age 3+</option>
+                        <option disabled selected>Age Rating</option>
+                        <option>Age 12+</option>
+                        <option>Age 16+</option>
+                        <option>Age 18+</option>
+                        <option>Age 7+</option>
+                        <option>Age 3+</option>
                     </select>
 
-                    <label id = "filter_label">Platform</label>
                     <select  class = filter_buttons type="button">
-                        <option value="best_sellers">Nintendo Switch</option>
+                    <option disabled selected>Platform</option>
+                        <option>Nintendo Switch</option>
                     </select>
                 </div>
             </div>
@@ -101,111 +103,128 @@
                 <hr id = "line" size="3" width="90%" color="black"> 
 
                 <div class = "game_collection">
-                    <div class = "game_section">
+                    <div class = "game_section" id = "game1">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £49.99 </h4>
                         <h6 class = "game_name"> Kirby and the Forgotten Land<br> Nintendo Switch</h6>
-                        <button class = "atb_button" type="button">Add to Basket</button>
+                        <p id = "game_attributes">(Platformer/7+)</p>
+                        <button onclick="add_to_cart(game1)" class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
-                    <div class = "game_section">
+                    <div class = "game_section" id = "game2">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £44.99 </h4>
                         <h6 class = "game_name"> Super Mario 3D World <br> Nintendo Switch</h6>
-                        <button class = "atb_button" type="button">Add to Basket</button>
+                        <p id = "game_attributes">(Platformer/7+)</p>
+                        <button onclick="add_to_cart(game2)" class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
-                    <div class = "game_section">
+                    <div class = "game_section" id = "game3">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £44.99 </h4>
                         <h6 class = "game_name"> Mario Kart 8 Deluxe <br> Nintendo Switch</h6>
-                        <button class = "atb_button" type="button">Add to Basket</button>
+                        <p id = "game_attributes">(Racing/7+)</p>
+                        <button onclick="add_to_cart(game3)" class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
-                    <div class = "game_section">
+                    <div class = "game_section" id = "game4">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £49.99 </h4>
                         <h6 class = "game_name"> Splatoon 3 <br> Nintendo Switch</h6>
-                        <button class = "atb_button" type="button">Add to Basket</button>
+                        <p id = "game_attributes">(Shooter/7+)</p>
+                        <button onclick="add_to_cart(game4)" class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
-                    <div class = "game_section">
+                    <div class = "game_section" id = "game5">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £49.99 </h4>
                         <h6 class = "game_name"> Zelda - Breath of the Wild <br> Nintendo Switch</h6>
-                        <button class = "atb_button" type="button">Add to Basket</button>
+                        <p id = "game_attributes">(Action Adventure/12+)</p>
+                        <button onclick="add_to_cart(game5)" class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
-                    <div class = "game_section">
+                    <div class = "game_section" id = "game6">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £44.99 </h4>
                         <h6 class = "game_name"> Super Mario Odessey <br> Nintendo Switch</h6>
-                        <button class = "atb_button" type="button">Add to Basket</button>
+                        <p id = "game_attributes">(Platformer/7+)</p>
+                        <button onclick="add_to_cart(game6)" class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
-                    <div class = "game_section">
+                    <div class = "game_section" id = "game7">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £44.99 </h4>
                         <h6 class = "game_name"> Super Mario Bros. U <br> Nintendo Switch</h6>
-                        <button class = "atb_button" type="button">Add to Basket</button>
+                        <p id = "game_attributes">(Platformer/7+)</p>
+                        <button onclick="add_to_cart(game7)" class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
-                    <div class = "game_section">
+                    <div class = "game_section" id = "game8">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £52.99 </h4>
                         <h6 class = "game_name"> Super Smash Bros. Ultimate <br> Nintendo Switch</h6>
-                        <button class = "atb_button" type="button">Add to Basket</button>
+                        <p id = "game_attributes">(Fighting/12+)</p>
+                        <button onclick="add_to_cart(game8)" class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
-                    <div class = "game_section">
+                    <div class = "game_section" id = "game9">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £49.99 </h4>
                         <h6 class = "game_name"> Xenoblade Chronicles 2 <br> Nintendo Switch</h6>
-                        <button class = "atb_button" type="button">Add to Basket</button>
+                        <p id = "game_attributes">(RPG/12+)</p>
+                        <button onclick="add_to_cart(game9)" class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
-                    <div class = "game_section">
+                    <div class = "game_section" id = "game10">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £49.99 </h4>
                         <h6 class = "game_name"> Xenoblade Chronicles 3 <br> Nintendo Switch</h6>
-                        <button class = "atb_button" type="button">Add to Basket</button>
+                        <p id = "game_attributes">(RPG/12+)</p>
+                        <button onclick="add_to_cart(game10)" class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
-                    <div class = "game_section">
+                    <div class = "game_section" id = "game11">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £44.99 </h4>
                         <h6 class = "game_name"> Yoshi's Crafted World <br> Nintendo Switch</h6>
-                        <button class = "atb_button" type="button">Add to Basket</button>
+                        <p id = "game_attributes">(Platformer/7+)</p>
+                        <button onclick="add_to_cart(game11)" class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
-                    <div class = "game_section">
+                    <div class = "game_section" id = "game12">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £45.99 </h4>
                         <h6 class = "game_name"> Donkey Kong Tropical Freeze <br> Nintendo Switch</h6>
-                        <button class = "atb_button" type="button">Add to Basket</button>
+                        <p id = "game_attributes">(Platformer/3+)</p>
+                        <button onclick="add_to_cart(game12)" class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
-                    <div class = "game_section">
+                    <div class = "game_section" id = "game13">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £39.99 </h4>
                         <h6 class = "game_name"> Captain Toad: Treasure Tracker <br> Nintendo Switch</h6>
-                        <button class = "atb_button" type="button">Add to Basket</button>
+                        <p id = "game_attributes">(Platformer/3+)</p>
+                        <button onclick="add_to_cart(game13)" class = "atb_button" type="button">Add to Basket</button>
                     </div>
-                </div>       
+                </div>
             </div>
+            <div id = "empty_container">
+                    <h5 id = product_num></h5>
+                    <h5 id = price_total></h5>
+                </div>          
         </div>
     </body>
 </html>

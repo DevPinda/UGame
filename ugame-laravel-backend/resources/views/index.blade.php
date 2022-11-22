@@ -3,6 +3,7 @@
  
 <head>
     <script defer src="js/script.js"></script>
+    <script defer src="js/search.js"></script>
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
