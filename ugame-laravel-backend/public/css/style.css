@@ -477,7 +477,7 @@
     height: 40px;
     display: block;
     width: 270px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     text-align: left;
     padding-left: 10px;
     background-color: rgb(84, 84, 84);
@@ -495,7 +495,7 @@
     height: 40px;
     display: block;
     width: 270px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     text-align: left;
     padding-left: 10px;
     background-color: rgb(84, 84, 84);
@@ -513,7 +513,7 @@
     height: 40px;
     display: block;
     width: 270px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     text-align: left;
     padding-left: 10px;
     background-color: rgb(36, 36, 36);
@@ -553,6 +553,14 @@
     color: white;
     border: none;
     font-weight: bold;
+}
+
+#game_attributes{
+    margin-top: -10px;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(88, 88, 88);
 }
 
 #signin_button:hover{
@@ -617,4 +625,14 @@
     margin-top: 20px;
     margin-left: -30px;
     width: 100px;
+}
+
+#search_status{
+    margin-left: 70px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#empty_container{
+    display: none;
 }
