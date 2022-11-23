@@ -60,7 +60,16 @@
             <label>Platform</label>
             <input type="text" class="form-control" placeholder="Platform" name="platform">
             <label>Genre</label>
-            <input type='text' class='form-control' placeholder='Genre' name='genre'>
+            <select class='form-control' placeholder='Genre' name='genre'>
+                <option value='Action Adventure'>Action Adventure</option>
+                <option value='Platformer'>Platformer</option>
+                <option value='RPG'>RPG</option>
+                <option value='Horror'>Horror</option>
+                <option value='Shooter'>Shooter</option>
+                <option value='Fighting'>Fighting</option>
+                <option value='Racing'>Racing</option>
+                <option value='Sport'>Sport</option>
+            </select>
             <label>Publisher</label>
             <input type='text' class='form-control' placeholder='Publisher' name='publisher'>
             <label>Price: £</label>
