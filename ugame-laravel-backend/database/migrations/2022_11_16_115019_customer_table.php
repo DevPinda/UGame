@@ -14,15 +14,15 @@ return new class extends Migration
     public function up()
     {
         Schema::create('customers', function (Blueprint $table) {
-            $table->increments('CustomerID');
-            $table->string('Username');
-            $table->string('EmalAddress');
-            $table->string('PhoneNumber');
+            $table->increments('customerID');
+            $table->string('username');
+            $table->string('emailAddress');
+            $table->string('phoneNumber');
             $table->string('firstName');
             $table->string('lastName');
-            $table->string('PostCode');
-            $table->string('HomeAddress');
-            $table->integer('GamesBought');
+            $table->string('postCode');
+            $table->string('homeAddress');
+            $table->integer('gamesBought');
             
         });
     }

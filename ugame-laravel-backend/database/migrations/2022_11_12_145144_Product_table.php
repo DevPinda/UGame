@@ -15,17 +15,17 @@ return new class extends Migration
     public function up()
     {
         Schema::create('products', function (Blueprint $table) {
-                    $table->increments('ProductsID');
-                    $table->string('firstName');
-                    $table->string('lastName');
-                    $table->integer('Downloads');
-                    $table->string('Platform');
-                    $table->string('Genre');
-                    $table->date('ReleaseDate');
-                    $table->string('OperatingSystem');
-                    $table->integer('Stock');
-                    $table->integer('Orders');
-                    $table->float('Price');
+                    $table->increments('productsID');
+                    $table->integer('downloads');
+                    $table->string('platform');
+                    $table->string('genre');
+                    $table->date('releaseDate');
+                    $table->string('publisher');
+                    $table->integer('stock');
+                    $table->integer('orders');
+                    $table->integer('players');
+                    $table->float('price');
+                    $table->integer('rating')
             }
 
         );}
