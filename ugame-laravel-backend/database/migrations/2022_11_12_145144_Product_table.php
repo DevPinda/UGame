@@ -16,15 +16,16 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
                     $table->increments('ProductsID');
-                    $table->increments('Name');
-                    $table->increments('Downloads');
-                    $table->increments('Platform');
-                    $table->increments('Genre');
-                    $table->increments('ReleaseDate');
-                    $table->increments('OperatingSystem');
-                    $table->increments('Stock');
-                    $table->increments('Orders');
-                    $table->increments('Price');
+                    $table->string('firstName');
+                    $table->string('lastName');
+                    $table->integer('Downloads');
+                    $table->string('Platform');
+                    $table->string('Genre');
+                    $table->date('ReleaseDate');
+                    $table->string('OperatingSystem');
+                    $table->integer('Stock');
+                    $table->integer('Orders');
+                    $table->float('Price');
             }
 
         );}
@@ -37,6 +38,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_order_details');
+        Schema::dropIfExists('products');
     }
  };

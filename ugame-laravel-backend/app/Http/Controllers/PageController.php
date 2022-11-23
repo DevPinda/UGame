@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
+use App\Models\Customers;
 
 class PageController extends Controller {
     function index() {
@@ -26,7 +28,16 @@ class PageController extends Controller {
     }
 
     function signin(){
-        return view('signin');
+        // $email = request('email');
+        $customer = Customers::where('emailAddress', request('email'))->get();
+        $_SESSION['customer']= $customer;
+        $type = $_SESSION['customer'];
+        if ($type == 'admin'){
+            return view('index',['type' => $type]);
+        }
+        else{
+            return view('signin');
+        }
     }
 
     function deals(){

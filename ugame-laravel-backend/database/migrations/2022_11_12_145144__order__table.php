@@ -14,13 +14,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('orderDetails', function (Blueprint $table) {
+        Schema::create('orders', function (Blueprint $table) {
             $table->increments('orderId');
             $table->datetime('purchaseDate');
             $table->datetime('deliveryDate');
             $table->string('emailAddress');
             $table->string('phoneNumber');
-            $table->string('fullName');
+            $table->string('firstName');
+            $table->string('lastName');
             $table->text('postCode');
             $table->text('homeAddress');
             $table->decimal('price');
@@ -47,6 +48,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_order_details');
+        Schema::dropIfExists('orders');
     }
 };

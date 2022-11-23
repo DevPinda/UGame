@@ -12,11 +12,10 @@ use App\Http\Controllers\Controller;
 class OrderController extends Controller
 {
     //
-    function order_create(Request $request){
+    function insertform(Request $request){
         $first_name = $request->input('first_name');
         $last_name = $request->input('last_name');
-        $fullname = $first_name+" "+$last_name;
-        
+        // $fullname = $first_name+" "+$last_name;
         $email = $request->input('email');
         $postcode = $request->input('postcode');
         $purchaseDate = date("d:m:Y");
@@ -26,7 +25,8 @@ class OrderController extends Controller
         $price = $request->input('price');
         $productId = $request->input('productId');
         $supplierId = $request->input('supplierId');
-        $data=array('fullName'=>$fullname,
+        $data=array('firstName'=>$first_name,
+            "lastName"=>$last_name,
             "purchaseDate"=>$purchaseDate,
             "deliveryDate"=>$deliveryDate,
             "emailAddress"=>$email,
