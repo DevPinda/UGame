@@ -25,7 +25,7 @@ return new class extends Migration
                     $table->integer('orders');
                     $table->integer('players');
                     $table->float('price');
-                    $table->integer('rating')
+                    $table->integer('rating');
             }
 
         );}
