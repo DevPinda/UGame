@@ -19,7 +19,7 @@
 <body class = "all">
     <header>
         <div class = "slogan">
-            <h6 id = "phrase"> <img class = "white_logo" src = "images/UGAME logo (white).png" width = "100" height = "25"> Discover our latest releases.</h6>
+        <h6 id = "phrase"> <marquee width="100%" text-align='center' > <img class = "white_logo" src = "images/UGAME logo (white).png" width = "100" height = "25"> Discover our latest releases.</marquee></h6>
         </div>
         <div class = "top_section">
             <a class = "logo" href="index"> <img class = "logo" src = "images/UGAME logo.png" width = "200" height = "50"> </a>
@@ -44,11 +44,7 @@
             </nav>
         </div>
     </header>
-    <img class = "sales_banner_img" src = "images/UGAME AMAZING DEALS Banner.png" width = "1280" height = "350">
-    <div class = "top_selling_sect">
-        <h4 id = "top_selling_title"> Top Selling </h4>
-        <h6 id = "top_selling_slogan"> View all top selling games. </h6>
-    </div>
+    
 
     <div class = "game_form">
     <h1>Add Games</h1>
