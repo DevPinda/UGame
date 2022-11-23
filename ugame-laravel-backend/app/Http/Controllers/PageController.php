@@ -28,17 +28,9 @@ class PageController extends Controller {
     }
 
     function signin(){
-        // $email = request('email');
-        $customer = Customers::where('emailAddress', request('email'))->get();
-        $_SESSION['customer']= $customer;
-        $type = $_SESSION['customer'];
-        if ($type == 'admin'){
-            return view('index',['type' => $type]);
+        return view('signin');
         }
-        else{
-            return view('signin');
-        }
-    }
+    
 
     function deals(){
         return view('deals');
@@ -51,9 +43,6 @@ class PageController extends Controller {
         return view('ord_create');
     }
 
-
-
-    
     function order_create_table($name){
         return view();
     }

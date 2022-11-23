@@ -42,16 +42,19 @@
     </header>
 </body>
 <div class = "signin_form">
+
+    <form acton="/signin/{email}" method="get">
     <h4 id = "create_account">Sign in</h4>
     <h4 id = "create_account_caption">Enter email and password.</h4>
     <div class = "group_input_fields">
         <label id = "email_label">Email</label>
-        <input class = input_fields type="text" placeholder="example@gmail.com"><br>
+        <input class = input_fields type="text" placeholder="example@gmail.com" name="email"><br>
         <label id = "password_label">Password</label>
         <input class = input_fields type="text" placeholder="password"><br>
-        <button class = "input_fields" id = "signin_button" type="button">SIGN IN</button>
+        <button class = "input_fields" id = "signin_button" type="submit" >SIGN IN</button>
         <p id = "sign_in_question"><a id = "sign_in_question" href="register">Don't have an account? Register.</a></p>
     </div>
+</form>
 </div>
 </html>
 

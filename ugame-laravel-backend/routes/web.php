@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
-
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,14 +27,20 @@ Route::get('/xbox', [PageController::class,'xbox']);
 
 Route::get('/playstation', [PageController::class,'playstation']);
 
+// Route::post('/signin/{id}', [UserController::class,'checkStatus']);
+
 Route::get('/signin', [PageController::class,'signin']);
 
 Route::get('/deals', [PageController::class,'deals']);
 
 Route::get('/register', [PageController::class,'register']);
 
-Route::get('/order', [PageController::class, 'insertform']);
+Route::get('/checkout', [OrderController::class, 'insertform']);
 
-Route::post('/order_create', [OrderController::class, 'order_create']);
+Route::get('/admin', [UserController::class, 'admin']);
 
-Route::post('/order_table_Create', [PageController:: class, 'order_create_table']);
+Route::post('/store', [UserController::class,'store_products']);
+
+// Route::post('/order_create', [OrderController::class, 'order_create']);
+
+// Route::post('/order_table_Create', [PageController:: class, 'order_create_table']);

@@ -104,6 +104,13 @@
     font-weight: bold;
 }
 
+#profile{
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    font-weight: bold;  
+}
+
 .nav_bar{
     margin-top: 15px;
     width: 100%;
