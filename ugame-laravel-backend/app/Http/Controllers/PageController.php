@@ -39,6 +39,15 @@ class PageController extends Controller {
     function basket(){
         return view('basket');
     }
+
+    function about(){
+        return view('about');
+    }
+
+    function contact(){
+        return view('contact');
+    }
+
     function insertform(){
         return view('ord_create');
     }
