@@ -16,26 +16,38 @@
 </head>
  
 <body class = "all">
-    <header>
+<header>
         <div class = "slogan">
-            <h6 id = "phrase"> <img class = "white_logo" src = "images/UGAME logo (white).png" width = "100" height = "25"> Discover our latest releases.</h6>
+            <h6 id = "phrase"> <!--<marquee width="130%" text-align='center' >--> <img class = "white_logo" src = "images/UGAME logo (white).png" width = "100" height = "25"> Discover our latest releases.<!--</marquee>--></h6>
         </div>
+
+        <div id = "about_contact">
+                <ul id = "about_contact_txt">
+                    <li><a id="about_us" href="about">ABOUT</a></li>
+                    <li><a id="contact" href="contact">CONTACT</a></li>
+                </ul>
+            </div>
+
         <div class = "top_section">
+
             <a class = "logo" href="index"> <img class = "logo" src = "images/UGAME logo.png" width = "200" height = "50"> </a>
             <input id = search type="text" placeholder="Search games..." name="search"> 
             <button id = "search_button" type="button">Go</button>
+
+
             <ul id=register_basket>
                 <li><a id="sign_register" href="register"> <i class="fa-solid fa-user-large"></i> Sign in or Register </a></li>
                 <li><a id="basket" href="basket"> <i class="fa-solid fa-basket-shopping"></i> Basket</a></li>
             </ul>
         </div>
+
         <div class="nav_bar">
             <nav>
                 <ul id=links>
                     <li><a id="playstation" href="playstation">PLAYSTATION</a></li>
                     <li><a id="xbox" href="xbox">XBOX</a></li>
                     <li><a id="nintendo" href="nintendo">NINTENDO</a></li>
-                    <li><a id="nintendo" href="deals">DEALS</a></li>
+                    <li><a id="deals" href="deals">DEALS</a></li>
                 </ul>
             </nav>
         </div>
