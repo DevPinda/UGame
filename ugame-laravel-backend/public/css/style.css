@@ -44,7 +44,7 @@
 }
 
 #register_basket{
-    margin-left: 15px;
+    margin-left: -5px;
     display: inline-block;
 }
 
@@ -71,6 +71,32 @@
     margin-right: 20px;
     font-size: 12px;
     color: rgb(45, 45, 255);
+}
+
+#cart_window{
+    position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 99999;
+	transform: scale(0);
+    overflow: auto;
+}
+
+.cart_sect{
+    background-color: white;
+    width: 60%;
+    height: 70%;
+    overflow: auto;
+}
+
+#cart_window.active{
+	transform: scale(1);
 }
 
 #about_us:hover{
@@ -133,7 +159,7 @@
     width: 1000px;
 }
 
-#basket{
+.basket{
     margin-left: 20px;
     text-decoration: none;
     color:  rgb(50, 50, 50);
@@ -141,7 +167,7 @@
 }
 
 #sign_register{
-    margin-left: 20px;
+    margin-left: 30px;
     text-decoration: none;
     color: rgb(50, 50, 50);
     font-weight: bold;
@@ -708,4 +734,189 @@
 #empty_basket{
     margin-left: 300px;
     width: 500x;
+}
+
+#basket_link{
+    margin-left: 10px;
+    font-size: 15px;
+    padding-bottom: 23px;
+    color: rgb(25, 25, 25);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -0.5px;
+    border: none;
+    padding-top: 3px;
+    background-color: none;
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    background-color: rgb(255, 255, 255);
+    height: 20px;
+    font-weight: bold;
+}
+
+#item_num_noti{
+    margin-left: 1px;
+    margin-bottom: 15px;
+    width: 2px;
+    height: 4px;
+    padding-bottom: 1px;
+    padding-top: 2px;
+    padding-right: 3px;
+    padding-left: 3px;
+    background-color: rgb(253, 0, 42);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    border: 2.4px solid rgb(112, 0, 19);
+}
+
+#game_id{
+    display: none;
+}
+
+#basket_title{
+    margin-left: 70px;
+    margin-top: 30px;
+    font-family: 'Archivo Black';
+    font-size: 35px;
+}
+
+#total_title{
+    margin-left: 70px;
+    /*margin-top: 30px;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    transform: scale(1,0.965);
+}
+
+.basket_table_{
+    margin-left: 70px;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -0.5px;
+    margin-right: 80px;
+}
+
+.basket_table_ tr th{
+    text-align: left;
+}
+
+#table_row_d th{
+    padding-top: 12px;
+    padding-bottom: 15px;
+    padding-right: 40px;
+    padding-left: 10px;
+}
+
+#table_row_d{
+    border-bottom: 0.5px solid rgb(126, 126, 126);
+}
+
+/*#table_row_d #item_quantity{
+    padding-right: 0px;
+}*/
+
+#top_headers{
+    background-color: rgb(86, 0, 112);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: scale(1,0.965);
+    
+}
+
+#top_headers th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    
+}
+
+#item_num_noti{
+    display: inline;
+}
+
+#disp_game_price{
+    font-family: 'Archivo Black';
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(47, 47, 47);
+    letter-spacing: -1.3px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#disp_title{
+    font-family: Arial, Helvetica, sans-serif;
+    transform: scale(1,0.9);
+    font-weight: bolder;  
+    font-size: 17px;
+}
+
+#remove_item_{
+    color: rgb(56, 56, 56);
+    font-weight: lighter;
+}
+
+#close_button{
+    margin-top: 30px;
+    margin-left: 755px;
+    border: none;
+    background-color: rgb(231, 0, 35);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    margin-bottom: 40px;
+}
+
+#close_button:hover{
+    margin-top: 30px;
+    margin-left: 755px;
+    border: none;
+    background-color: rgb(150, 0, 22);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    margin-bottom: 40px;
+}
+
+#checkout_button{
+
+    margin-top: 20px;
+    margin-left: 615px;
+    height: 40px;
+    width: 200px;
+    padding-bottom: 13px;
+    padding-top: 7px;
+    padding-right: 10px;
+    font-size: 18px;
+    background-color: rgb(75, 0, 128);
+    color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -1px;
+    transform: scale(1,0.965);
+    border: none;
+    border-radius: 5px;
+}
+
+#checkout_button:hover{
+    margin-top: 20px;
+    margin-left: 615px;
+    height: 40px;
+    width: 200px;
+    padding-bottom: 13px;
+    padding-top: 7px;
+    padding-right: 10px;
+    font-size: 18px;
+    background-color: rgb(42, 0, 72);
+    color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -1px;
+    transform: scale(1,0.965);
+    border: none;
+    border-radius: 5px;
 }

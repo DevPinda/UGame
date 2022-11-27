@@ -15,6 +15,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <title>UGame?</title>
+
+    <script>
+        function del_item(e){
+            let items = []
+            JSON.parse(localStorage.getItem('game_items')).map(data =>{
+                if (data.id != e.parentElement.parentElement.children[0].textContent){
+                    items.push(data);
+                }
+            });
+            localStorage.setItem('game_items', JSON.stringify(items));
+            window.location.reload();
+        }
+    </script>
+
+
 </head>
 
 <div class = "all">
@@ -39,8 +54,9 @@
 
 
             <ul id=register_basket>
-                <li><a id="sign_register" href="register"> <i class="fa-solid fa-user-large"></i> Sign in or Register </a></li>
-                <li><a id="basket" href="basket"> <i class="fa-solid fa-basket-shopping"></i> Basket</a></li>
+                <li><a id="sign_register" href="register"> Sign in or Register </a></li>
+                <!--<li><a class="basket" id = "basket_link" href="basket"><i class="fa-solid fa-basket-shopping"></i> Basket</a></li>-->
+                <button id = "basket_link" type="button">Basket</button><p id = "item_num_noti">0</p>
             </ul>
         </div>
 
@@ -122,124 +138,132 @@
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £49.99 </h4>
-                        <h6 class = "game_name"> Elden Ring <br> Xbox Series X</h4>
+                        <h6 class = "game_name"> Elden Ring <br> [Xbox Series X]</h4>
                         <p id = "game_attributes">(RPG/16+)</p>
-                        <button onclick="add_to_cart(game1)" class = "atb_button" type="button">Add to Basket</button>
+                        <button  class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
                     <div class = "game_section" id = "game2">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £41.99 </h4>
-                        <h6 class = "game_name"> Resident Evil Village <br> Xbox Series X</h4>
+                        <h6 class = "game_name"> Resident Evil Village <br> [Xbox Series X]</h4>
                         <p id = "game_attributes">(Horror/18+)</p>
-                        <button onclick="add_to_cart(game2)" class = "atb_button" type="button">Add to Basket</button>
+                        <button  class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
                     <div class = "game_section" id = "game3">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £54.99 </h4>
-                        <h6 class = "game_name"> Forza Horizon 5 <br> Xbox Series X</h4>
+                        <h6 class = "game_name"> Forza Horizon 5 <br> [Xbox Series X]</h4>
                         <p id = "game_attributes">(Racing/3+)</p>
-                        <button onclick="add_to_cart(game3)" class = "atb_button" type="button">Add to Basket</button>
+                        <button  class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
                     <div class = "game_section" id = "game4">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £59.99 </h4>
-                        <h6 class = "game_name"> NBA 2K23 <br> Xbox Series X</h4>
+                        <h6 class = "game_name"> NBA 2K23 <br> [Xbox Series X]</h4>
                         <p id = "game_attributes">(Sport/3+)</p>
-                        <button onclick="add_to_cart(game4)" class = "atb_button" type="button">Add to Basket</button>
+                        <button  class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
                     <div class = "game_section" id = "game5">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £24.99 </h4>
-                        <h6 class = "game_name"> Sonic Colours <br> Xbox Series X</h4>
+                        <h6 class = "game_name"> Sonic Colours <br> [Xbox Series X]</h4>
                         <p id = "game_attributes">(Platformer/7+)</p>
-                        <button onclick="add_to_cart(game5)" class = "atb_button" type="button">Add to Basket</button>
+                        <button  class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
                     <div class = "game_section" id = "game6">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £54.99 </h4>
-                        <h6 class = "game_name"> Halo Infinite <br> Xbox Series X</h4>
+                        <h6 class = "game_name"> Halo Infinite <br> [Xbox Series X]</h4>
                         <p id = "game_attributes">(Shooter/16+)</p>
-                        <button onclick="add_to_cart(game6)" class = "atb_button" type="button">Add to Basket</button>
+                        <button  class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
                     <div class = "game_section" id = "game7">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £54.99 </h4>
-                        <h6 class = "game_name"> Grand Theft Auto: The Trilogy <br> Xbox Series X</h4>
+                        <h6 class = "game_name"> Grand Theft Auto: The Trilogy <br> [Xbox Series X]</h4>
                         <p id = "game_attributes">(Action Adventure/18+)</p>
-                        <button onclick="add_to_cart(game7)" class = "atb_button" type="button">Add to Basket</button>
+                        <button  class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
                     <div class = "game_section" id = "game8">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £49.99 </h4>
-                        <h6 class = "game_name"> Control <br> Xbox Series X</h4>
+                        <h6 class = "game_name"> Control <br> [Xbox Series X]</h4>
                         <p id = "game_attributes">(Action Adventure/16+)</p>
-                        <button onclick="add_to_cart(game8)" class = "atb_button" type="button">Add to Basket</button>
+                        <button  class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
                     <div class = "game_section" id = "game9">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £15.99 </h4>
-                        <h6 class = "game_name"> Borderlands 3 <br> Xbox Series X</h4>
+                        <h6 class = "game_name"> Borderlands 3 <br> [Xbox Series X]</h4>
                         <p id = "game_attributes">(Shooter/18+)</p>
-                        <button onclick="add_to_cart(game9)" class = "atb_button" type="button">Add to Basket</button>
+                        <button  class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
                     <div class = "game_section" id = "game10">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £27.99 </h4>
-                        <h6 class = "game_name"> Life Strange True Colors <br> Xbox Series X</h4>
+                        <h6 class = "game_name"> Life Strange True Colors <br> [Xbox Series X]</h4>
                         <p id = "game_attributes">(Action Adventure/16+)</p>
-                        <button onclick="add_to_cart(game10)" class = "atb_button" type="button">Add to Basket</button>
+                        <button  class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
                     <div class = "game_section" id = "game11">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £44.99 </h4>
-                        <h6 class = "game_name"> Soul Hackers 2 <br> Xbox Series X</h4>
+                        <h6 class = "game_name"> Soul Hackers 2 <br> [Xbox Series X]</h4>
                         <p id = "game_attributes">(RPG/16+)</p>
-                        <button onclick="add_to_cart(game11)" class = "atb_button" type="button">Add to Basket</button>
+                        <button  class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
                     <div class = "game_section" id = "game12">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £17.99 </h4>
-                        <h6 class = "game_name"> Forza Motorsport 7 <br> Xbox One</h4>
+                        <h6 class = "game_name"> Forza Motorsport 7 <br> [Xbox One]</h4>
                         <p id = "game_attributes">(Racing/3+)</p>
-                        <button onclick="add_to_cart(game12)" class = "atb_button" type="button">Add to Basket</button>
+                        <button  class = "atb_button" type="button">Add to Basket</button>
                     </div>
 
                     <div class = "game_section" id = "game13">
                         <div class = "single_box">
                         </div>
                         <h4 class = "game_price"> £25.99 </h4>
-                        <h6 class = "game_name"> Assassin's Creed Valhalla <br> Xbox Series X</h4>
+                        <h6 class = "game_name"> Assassin's Creed Valhalla <br> [Xbox Series X]</h4>
                         <p id = "game_attributes">(Action Adventure/18+)</p>
-                        <button onclick="add_to_cart(game13)" class = "atb_button" type="button">Add to Basket</button>
+                        <button  class = "atb_button" type="button">Add to Basket</button>
                     </div>
                 </div>       
             </div>
-            <div id = "empty_container">
-                <h5 id = product_num></h5>
-                <h5 id = price_total></h5>
-            </div>   
+            <div id = "cart_window">
+                <div class = "cart_sect">
+                    <h1 id = "basket_title">Your basket</h1>
+                    <h1 id = "total_title">Subtotal: </h1>
+                    <table class = "basket_table_"></table>
+                    <button id = "checkout_button">Checkout</button>
+                    <button id = "close_button">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
         </div>
     </body>
 </html>
