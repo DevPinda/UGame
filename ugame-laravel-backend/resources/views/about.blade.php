@@ -59,6 +59,34 @@
 
     <!--START HTML FOR ABOUT PAGE HERE SHINGAI:>-->
 
+    <section id="Get to know us">
+            <h1>UGame?</h1>
+            <img class = "logo" src = "images/UGAME logo.png" width = "800" height = "300">
+            
+            <h2>Get to know us</h2>
+            <p>
+                We are a new found company that priorites on selling the latest, old school, 
+                classic and the trendiest games on varies platforms. Founded in 2022, our team are ready to
+                bring a new experience for each customer. Making it easier to purchase games           
+            </p>
+
+            <h2>Cookies</h2>
+            <p>Our e-commerce uses cookies which are a tiny text file that a website can place on your computer when you visit it. 
+                Cookies are used to improve your experience while using the website by facilitating navigation. 
+                Cookies allow a website to customise the content you see based on your browsing choices.
+            </p>
+            <p>  
+                No harm is brought to your computer or device when cookies are placed on your computer.
+            </p>
+
+            <h2> Shopping With Confidence </h2>
+            <p>
+                Rest easy knowing that we have a team that is dedicated to making sure that your experience at our safe is
+                is safe for every user. With experts that have years of experience within the cybersecurity, all transactions
+                are secure and kept confidential. Our website will always be active at any time of the day.
+            </p>
+</section>
+
     <body>
         
 </div>
