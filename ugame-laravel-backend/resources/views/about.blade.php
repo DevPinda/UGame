@@ -57,8 +57,6 @@
         </div>
     </header>
 
-    <!--START HTML FOR ABOUT PAGE HERE SHINGAI:>-->
-
     <section id="Get to know us">
             <h1>UGame?</h1>
             <img class = "logo" src = "images/UGAME logo.png" width = "800" height = "300">
