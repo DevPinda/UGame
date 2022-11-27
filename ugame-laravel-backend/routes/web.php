@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,8 +17,10 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', [PageController::class,'index']);
+Route::get('/', [ProductsController::class,'show']);
 
 Route::get('/index', [PageController::class,'index']);
+Route::get('/index', [ProductsController::class,'show']);
 
 Route::get('/nintendo', [PageController::class,'nintendo']);
 

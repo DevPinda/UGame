@@ -58,71 +58,17 @@
         <h4 id = "top_selling_title"> Top Selling </h4>
         <h6 id = "top_selling_slogan"> View all top selling games. </h6>
     </div>
-
+    
+    @foreach($products as $product)
     <div class = "game_collection">
         <div class = "game_section">
             <div class = "single_box">
             </div>
-            <h4 class = "game_price"> £19.99 </h4>
-            <h6 class = "game_name"> Red Dead Redemption 2 <br> PlayStation 4</h4>
+            <h4 class = "game_price"> £{{$product->price}} </h4>
+            <h6 class = "game_name"> {{$product->title}} <br> {{$product->platform}} </h4>
             <button class = "atb_button" type="button">Add to Basket</button>
         </div>
-
-        <div class = "game_section">
-            <div class = "single_box">
-            </div>
-            <h4 class = "game_price"> £44.99 </h4>
-            <h6 class = "game_name"> Super Mario 3D World <br> Nintendo Switch</h4>
-            <button class = "atb_button" type="button">Add to Basket</button>
-        </div>
-
-        <div class = "game_section">
-            <div class = "single_box">
-            </div>
-            <h4 class = "game_price"> £21.99 </h4>
-            <h6 class = "game_name"> Grand Theft Auto 5 <br> PlayStation 5</h4>
-            <button class = "atb_button" type="button">Add to Basket</button>
-        </div>
-
-        <div class = "game_section">
-            <div class = "single_box">
-            </div>
-            <h4 class = "game_price"> £26.99 </h4>
-            <h6 class = "game_name"> Far Cry 5 <br> PlayStation 4</h4>
-            <button class = "atb_button" type="button">Add to Basket</button>
-        </div>
-
-        <div class = "game_section">
-            <div class = "single_box">
-            </div>
-            <h4 class = "game_price"> £24.99 </h4>
-            <h6 class = "game_name"> Yakuza 0 <br> PlayStation 4</h4>
-            <button class = "atb_button" type="button">Add to Basket</button>
-        </div>
-
-        <div class = "game_section">
-            <div class = "single_box">
-            </div>
-            <h4 class = "game_price"> £44.99 </h4>
-            <h6 class = "game_name"> Super Mario Odessey <br> Nintendo Switch</h4>
-            <button class = "atb_button" type="button">Add to Basket</button>
-        </div>
-
-        <div class = "game_section">
-            <div class = "single_box">
-            </div>
-            <h4 class = "game_price"> £19.99 </h4>
-            <h6 class = "game_name"> Ghost of Tshumima <br> PlayStation 5</h4>
-            <button class = "atb_button" type="button">Add to Basket</button>
-        </div>
-
-        <div class = "game_section">
-            <div class = "single_box">
-            </div>
-            <h4 class = "game_price"> £19.99 </h4>
-            <h6 class = "game_name"> Spider-Man <br> PlayStation 4</h4>
-            <button class = "atb_button" type="button">Add to Basket</button>
-        </div>
-    </div>       
+    </div>
+    @endforeach
 </body>
 </html>

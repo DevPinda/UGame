@@ -29,9 +29,8 @@ class PageController extends Controller {
 
     function signin(){
         return view('signin');
-        }
+    }
     
-
     function deals(){
         return view('deals');
     }
