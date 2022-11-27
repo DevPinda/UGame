@@ -1,59 +1,131 @@
-game_collection = document.getElementsByClassName("game_collection");
-game_section = document.getElementsByClassName("game_section");
-atb_button = document.getElementsByClassName("atb_button");
-empty_container = document.getElementById('empty_container');
-product_num = document.getElementById('product_num');
-price_total_display = document.getElementById('price_total');
+window.onload = function(){
+    game_collection = document.getElementsByClassName("game_collection");
+    game_section = document.getElementsByClassName("game_section");
+    atb_button = document.getElementsByClassName("atb_button");
+    empty_container = document.getElementById('empty_container');
+    product_num = document.getElementById('product_num');
+    price_total_display = document.getElementById('price_total');
+    basket_link = document.getElementById('basket_link');
+    cart_window = document.getElementById('cart_window');
+    close_button = document.getElementById('close_button');
+    checkout_button = document.getElementById('checkout_button')
 
-var added_item_id = 0; 
-var cart_total = 0;
-var price_total_rounded = 0;
+    var added_item_id = 0; 
+    var cart_total = 0;
+    var price_total_rounded = 0;
+    var list_of_products = []
 
-function add_to_cart (item){
-    empty_container.style.display = 'block'
-    added_item_id += 1;
-    var all_games = document.getElementsByClassName('game_section');
-    var selected_game = document.createElement('div');
-    selected_game.classList.add('cart_image');
-    selected_game.setAttribute('id', added_item_id);
+    basket_link.addEventListener("click", function(){
+        cart_window.classList.add('active');
+    })
 
-    var game_price = document.createElement('p');
-    game_price.innerText = item.children[1].innerText;
+    close_button.addEventListener("click", function(){
+        cart_window.classList.remove('active');
+    })
+
+    for (let i = 0; i < atb_button.length; i++ ){
+        atb_button[i].addEventListener("click", function(e){
+        
+            added_item_id += 1;
+            console.log(added_item_id);
+        
+            if (typeof(Storage) !== 'undefined'){
+                let game_item = {
+                    id: i + 1,
+                    price: e.target.parentElement.children[1].textContent,
+                    title: e.target.parentElement.children[2].textContent,
+                    genre_age: e.target.parentElement.children[3].textContent,
+                    item_num: 1
+                };
+        
+                if (JSON.parse(localStorage.getItem('game_items')) === null){
+                    list_of_products.push(game_item);
+                    localStorage.setItem("game_items",JSON.stringify(list_of_products));
+                    window.location.reload();
+                }else{
+                    const local_items = JSON.parse(localStorage.getItem("game_items"));
+                    local_items.map(data=>{
+                        if (game_item.id == data.id){
+                            game_item.item_num = data.item_num + 1;
+                            //console.log(game_item);
+                        }
+                        else{
+                            list_of_products.push(data);
+                        }
+                    });
+                    list_of_products.push(game_item);
+                    localStorage.setItem("game_items", JSON.stringify(list_of_products));
+                    window.location.reload();
+        
+                    //console.log(local_items);
+                }
+            }
+        })
+    
+    }
+
+    const cart_table = cart_window.querySelector('table');
+    const basket_title = document.getElementById('basket_title');
+    const title_total = document.getElementById('total_title');
+
+    const basket_noti = document.getElementById('item_num_noti');
+    let item_num = 0;
+    JSON.parse(localStorage.getItem("game_items")).map(data =>{
+        item_num = item_num + data.item_num;
+    })
+    basket_noti.innerHTML = item_num;
+
+    let price_total = 0;
+    JSON.parse(localStorage.getItem("game_items")).map(data =>{
+        price_total = price_total + parseFloat(data.price.substring(2));
+    })
+
+    price_total_round = price_total.toFixed(2)
+    total_title.innerHTML = price_total_round;
+    
+
+    basket_title.innerHTML = 'Your basket' + ' (' + item_num + ' Items)';
+    title_total.innerHTML = 'Subtotal: ' + '£' + price_total_round;
    
-    var game_title = document.createElement('p');
-    game_title.innerText = item.children[2].innerText;
+    let table_data = '';
+    table_data += '<tr id = "top_headers"><th>Item Price</th><th>Item Title</th><th>Genre and Age</th><th>Quantity</th><tr>';
+    console.log("!")
+    game_item_arr = JSON.parse(localStorage.getItem("game_items"));
+    console.log(game_item_arr);
+    
+    console.log("!")
+    if (game_item_arr === null || game_item_arr.length == 0){
+        table_data = 'No items in basket';
+    }else{
+        JSON.parse(localStorage.getItem("game_items")).map(data=>{
 
-    var delete_button = document.createElement('button');
-    delete_button.innerText = 'Delete';
-    delete_button.setAttribute('onclick', 'delete_game('+added_item_id+')')
+            table_data += '<tr id = "table_row_d"><th id = "game_id">'+data.id+'</th><th id = "disp_game_price">'+data.price+'</th><th id = "disp_title">'+data.title+
+            '</th><th>'+data.genre_age+'</th><th id = "item_quantity"> Qty: '+data.item_num+'</th><th id = "remove_item_"><a id = "remove_item_" href = "#" onclick = del_item(this)>Remove</a></th><tr>'
+        });
+    }
+    cart_table.innerHTML = table_data;
 
-    selected_game.append(game_price);
-    selected_game.append(game_title);
-    selected_game.append(delete_button);
-    empty_container.append(selected_game)
-
-    cart_total += 1;
-    game_price = parseFloat(game_price.innerText.substring(1));
-    round_game_price = parseFloat(game_price);
-    price_total_rounded += round_game_price;
-    price_total_rounded = parseFloat(price_total_rounded.toFixed(2));
-    price_total_display.innerText = 'Price Total: ' + price_total_rounded;
-    product_num.innerText = 'Items: ' + cart_total; 
-    localStorage.setItem()
 }
 
-function delete_game(item){
-    del_item = document.getElementById(item);
-    game_price = del_item.children[0].innerText;
-    game_price_convert = parseFloat(game_price.substring(1));
-    round_game_price = parseFloat(game_price_convert.toFixed(2));
-    cart_total -= 1;
-    price_total_rounded = price_total_rounded - round_game_price;
-    price_total_rounded = parseFloat(price_total_rounded.toFixed(2));
-    price_total_display.innerText = 'Price Total: ' + price_total_rounded;
-    product_num.innerText = 'Items: ' + cart_total; 
-    document.getElementById(item).remove();
-}
 
-//basket functionality is in development.
+    function delete_game(item){
+        del_item = document.getElementById(item);
+        game_price = del_item.children[0].innerText;
+        game_price_convert = parseFloat(game_price.substring(1));
+        round_game_price = parseFloat(game_price_convert.toFixed(2));
+        cart_total -= 1;
+        price_total_rounded = price_total_rounded - round_game_price;
+        price_total_rounded = parseFloat(price_total_rounded.toFixed(2));
+        price_total_display.innerText = 'Price Total: ' + price_total_rounded;
+        console.log(cart_total)
+        product_num.innerText = 'Items: ' + cart_total; 
+        document.getElementById(item).remove();
 
+        console.log(cart_total);
+        if (cart_total == 0){
+            empty_container.style.display = 'none';
+        }
+    }
+   
+
+    
