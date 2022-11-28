@@ -11,17 +11,17 @@ class ProductsController extends Controller {
     }
 
     public function playstationProducts(){
-        $playstationProducts = DB::select('select * from playstationProducts WHERE 1');
+        $playstationProducts = DB::select("select * from products WHERE platform='PlayStation' ");
         return view('playstation', ['playstationProducts'=>$playstationProducts]);
     }
 
     public function xboxProducts(){
-        $xboxProducts = DB::select('select * from xboxProducts WHERE 1');
+        $xboxProducts = DB::select("select * from products WHERE platform='Xbox'");
         return view('xbox', ['xboxProducts'=>$xboxProducts]);
     }
 
     public function nintendoProducts(){
-        $nintendoProducts = DB::select('select * from nintendoProducts WHERE 1');
+        $nintendoProducts = DB::select("select * from products WHERE platform='Nintendo'");
         return view('nintendo', ['nintendoProducts'=>$nintendoProducts]);
     }
 }

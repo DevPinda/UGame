@@ -21,6 +21,11 @@ return new class extends Migration
             $table->string('genre');
             $table->float('price');
             $table->integer('rating');
+            $table->string('stock');
+            $table->date('releaseDate');
+            $table->string('publisher');
+            $table->integer('downloads');
+            $table->integer('orders');
         }
     );}
     

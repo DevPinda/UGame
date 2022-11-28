@@ -48,7 +48,7 @@ class UserController extends Controller
         $publisher = $request->input('publisher');
         $stock = $request->input('stock');
         //$orders = $request->input();
-        $players = $request->input('players');
+        //$players = $request->input('players');
         $price = $request->input('price');
         $rating = $request->input('rating');
         $data=array(
@@ -58,9 +58,8 @@ class UserController extends Controller
             'genre'=>$genre,
             'releaseDate'=>$releaseDate,
             'publisher'=>$publisher,
-            'stock'=>0,
+            'stock'=>$stock,
             'orders'=>0,
-            'players'=>$players,
             'price'=>$price,
             'rating'=>$rating
         );
