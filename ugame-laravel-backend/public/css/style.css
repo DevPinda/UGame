@@ -253,6 +253,7 @@
 }
 
 .single_box{
+    margin-right: 100px;
     background-color: rgb(194, 194, 194);
     width: 150px;
     height: 200px;
@@ -270,14 +271,13 @@
 .game_price{
     transform: scale(0.7,1);
     margin-top: 10px;
-    margin-left: -28px;
+    margin-left: -40px;
     font-family: 'Archivo Black';
     color: rgb(47, 47, 47);
 }
 
 .game_section{
     float: left;
-    margin-right: 100px;
     margin-bottom: 60px;
     display: inline-block;
 }
