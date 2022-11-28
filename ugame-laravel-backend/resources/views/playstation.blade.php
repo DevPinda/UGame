@@ -132,135 +132,19 @@
                 <hr id = "line" size="3" width="90%" color="black"> 
 
                 <p id = "search_status"></p>
-
+                
+                @foreach($playstationProducts as $product)
                 <div class = "game_collection">
-                    <div class = "game_section" id = "game1">
+                    <div class = "game_section">
                         <div class = "single_box">
                         </div>
-                        <h4 class = "game_price"> £19.99 </h4>
-                        <h6 class = "game_name"> Red Dead Redemption 2 <br> [PlayStation 4]</h4>
-                        <p id = "game_attributes">(Action Adventure/18+)</p>
+                        <h4 class = "game_price"> £{{$product->price}} </h4>
+                        <h6 class = "game_name"> {{$product->title}} <br> [{{$product->platform}}]</h4>
+                        <p id = "game_attributes">({{$product->genre}}/{{$product->rating}}+)</p>
                         <button  class = "atb_button" type="button">Add to Basket</button>
                     </div>
-
-                    <div class = "game_section" id = "game2">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £24.99 </h4>
-                        <h6 class = "game_name"> Lost Judgement <br> [PlayStation 5]</h4>
-                        <p id = "game_attributes">(Action Adventure/18+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game3">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £21.99 </h4>
-                        <h6 class = "game_name"> Grand Theft Auto 5 <br> [PlayStation 5]</h4>
-                        <p id = "game_attributes">(Action Adventure/18+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game4">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £26.99 </h4>
-                        <h6 class = "game_name"> Far Cry 5 <br> [PlayStation 4]</h4>
-                        <p id = "game_attributes">(Shooter/18+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game5">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £24.99 </h4>
-                        <h6 class = "game_name"> Yakuza 0 <br> [PlayStation 4]</h4>
-                        <p id = "game_attributes">(Action Adventure/18+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game6">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £15.99 </h4>
-                        <h6 class = "game_name"> Nioh <br> [PlayStation 4]</h4>
-                        <p id = "game_attributes">(RPG/18+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game7">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £19.99 </h4>
-                        <h6 class = "game_name"> Ghost of Tshumima <br> [PlayStation 5]</h4>
-                        <p id = "game_attributes">(Action Adventure/18+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game8">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £28.95 </h4>
-                        <h6 class = "game_name"> FINAL FANTASY VII REMAKE<br> [PlayStation 4]</h4>
-                        <p id = "game_attributes">(RPG/16+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game9">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £23.99 </h4>
-                        <h6 class = "game_name"> Persona 5 Royal <br> [PlayStation 4]</h4>
-                        <p id = "game_attributes">(RPG/16+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game10">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £15.99 </h4>
-                        <h6 class = "game_name"> Uncharted 4 <br> [PlayStation 4]</h4>
-                        <p id = "game_attributes">(Action Adventure/18+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game11">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £23.99 </h4>
-                        <h6 class = "game_name"> Cyberpunk 2077 <br> [PlayStation 4]</h4>
-                        <p id = "game_attributes">(Action Adventure/18+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game12">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £15.99 </h4>
-                        <h6 class = "game_name"> The Last of Us Remastered<br> [PlayStation 4]</h4>
-                        <p id = "game_attributes">(Action Adventure/18+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game13">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £26.99 </h4>
-                        <h6 class = "game_name"> Last of Us Part II <br> [PlayStation 4]</h4>
-                        <p id = "game_attributes">(Action Adventure/18+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game14">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £70.99 </h4>
-                        <h6 class = "game_name"> God of War Ragnorok <br> [PlayStation 5]</h4>
-                        <p id = "game_attributes">(Action Adventure/18+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-                </div>    
-            </div>
+                </div>
+                @endforeach 
 
             <div id = "cart_window">
                 <div class = "cart_sect">

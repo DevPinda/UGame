@@ -5,8 +5,13 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 
 class ProductsController extends Controller {
-    public function show(){
-        $products = DB::select('select * from products WHERE 1');
-        return view('index', ['products'=>$products]);
+    public function indexProducts(){
+        $indexProducts = DB::select('select * from products WHERE 1');
+        return view('index', ['indexProducts'=>$indexProducts]);
+    }
+
+    public function playstationProducts(){
+        $playstationProducts = DB::select('select * from playstationProducts WHERE 1');
+        return view('playstation', ['playstationProducts'=>$playstationProducts]);
     }
 }
