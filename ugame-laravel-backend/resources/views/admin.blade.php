@@ -17,22 +17,33 @@
 </head>
  
 <body class = "all">
-    <header>
+<header>
         <div class = "slogan">
-        <h6 id = "phrase"> <marquee width="100%" text-align='center' > <img class = "white_logo" src = "images/UGAME logo (white).png" width = "100" height = "25"> Discover our latest releases.</marquee></h6>
+            <h6 id = "phrase"> <!--<marquee width="130%" text-align='center' >--> <img class = "white_logo" src = "images/UGAME logo (white).png" width = "100" height = "25"> Discover our latest releases.<!--</marquee>--></h6>
         </div>
+
+        <div id = "about_contact">
+                <ul id = "about_contact_txt">
+                    <li><a id="about_us" href="about">ABOUT</a></li>
+                    <li><a id="contact" href="contact">CONTACT</a></li>
+                    <li><a id="admin" href="admin">ADMIN</a></li>
+                </ul>
+            </div>
+
         <div class = "top_section">
+
             <a class = "logo" href="index"> <img class = "logo" src = "images/UGAME logo.png" width = "200" height = "50"> </a>
             <input id = search type="text" placeholder="Search games..." name="search"> 
             <button id = "search_button" type="button">Go</button>
+
+
             <ul id=register_basket>
-                <li><a id="sign_register" href="register"> <i class="fa-solid fa-user-large"></i> Sign in or Register </a></li>
-                <li><a id="basket" href="basket"> <i class="fa-solid fa-basket-shopping"></i> Basket</a></li>
-                @if (isset($type))
-                    <li><a id="profile" href="profile"> <i class="fa-solid fa-basket-shopping"></i> Profile</a></li>
-                @endif
+                <li><a id="sign_register" href="register"> Sign in or Register </a></li>
+                <!--<li><a class="basket" id = "basket_link" href="basket"><i class="fa-solid fa-basket-shopping"></i> Basket</a></li>-->
+                <button id = "basket_link" type="button">Basket</button><p id = "item_num_noti">0</p>
             </ul>
         </div>
+
         <div class="nav_bar">
             <nav>
                 <ul id=links>
@@ -47,7 +58,7 @@
     
 
     <div class = "game_form">
-    <h1>Add Games</h1>
+    <h1>Admin</h1>
         <form name="add-games" action="/store" method="post" style="width:70%; margin-left:15%;">
             
             @csrf

@@ -41,6 +41,7 @@
                 <ul id = "about_contact_txt">
                     <li><a id="about_us" href="about">ABOUT</a></li>
                     <li><a id="contact" href="contact">CONTACT</a></li>
+                    <li><a id="admin" href="admin">ADMIN</a></li>
                 </ul>
             </div>
 
