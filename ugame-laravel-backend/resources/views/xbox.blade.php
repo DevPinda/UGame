@@ -43,6 +43,7 @@
                 <ul id = "about_contact_txt">
                     <li><a id="about_us" href="about">ABOUT</a></li>
                     <li><a id="contact" href="contact">CONTACT</a></li>
+                    <li><a id="admin" href="admin">ADMIN</a></li>
                 </ul>
             </div>
 
@@ -63,10 +64,10 @@
         <div class="nav_bar">
             <nav>
                 <ul id=links>
+                    <li><a id="deals" href="index">HOME</a></li>
                     <li><a id="playstation" href="playstation">PLAYSTATION</a></li>
                     <li><a id="xbox" href="xbox">XBOX</a></li>
                     <li><a id="nintendo" href="nintendo">NINTENDO</a></li>
-                    <li><a id="deals" href="deals">DEALS</a></li>
                 </ul>
             </nav>
         </div>
