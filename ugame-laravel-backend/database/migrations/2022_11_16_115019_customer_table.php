@@ -23,7 +23,6 @@ return new class extends Migration
             $table->string('postCode');
             $table->string('homeAddress');
             $table->integer('gamesBought');
-            
         });
     }
 

@@ -17,10 +17,10 @@ use App\Http\Controllers\ProductsController;
 */
 
 Route::get('/', [PageController::class,'index']);
-Route::get('/', [ProductsController::class,'show']);
+Route::get('/', [ProductsController::class,'indexProducts']);
 
 Route::get('/index', [PageController::class,'index']);
-Route::get('/index', [ProductsController::class,'show']);
+Route::get('/index', [ProductsController::class,'indexProducts']);
 
 Route::get('/nintendo', [PageController::class,'nintendo']);
 
@@ -29,6 +29,7 @@ Route::get('/basket', [PageController::class,'basket']);
 Route::get('/xbox', [PageController::class,'xbox']);
 
 Route::get('/playstation', [PageController::class,'playstation']);
+Route::get('/playstation', [ProductsController::class,'playstationProducts']);
 
 // Route::post('/signin/{id}', [UserController::class,'checkStatus']);
 

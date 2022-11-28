@@ -75,7 +75,7 @@
         <h6 id = "top_selling_slogan"> View all top selling games. </h6>
     </div>
 
-    @foreach($products as $product)
+    @foreach($indexProducts as $product)
     <div class = "game_collection">
         <div class = "game_section">
             <div class = "single_box">
