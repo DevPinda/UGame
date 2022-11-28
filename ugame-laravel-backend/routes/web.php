@@ -35,11 +35,9 @@ Route::get('/playstation', [ProductsController::class,'playstationProducts']);
 
 // Route::post('/signin/{id}', [UserController::class,'checkStatus']);
 
-Route::get('/signin', [PageController::class,'signin']);
+//Route::get('/signin', [PageController::class,'signin']);
 
 Route::get('/deals', [PageController::class,'deals']);
-
-Route::get('/register', [PageController::class,'register']);
 
 Route::get('/checkout', [OrderController::class, 'insertform']);
 
@@ -54,3 +52,13 @@ Route::get('/contact', [PageController::class,'contact']);
 // Route::post('/order_create', [OrderController::class, 'order_create']);
 
 // Route::post('/order_table_Create', [PageController:: class, 'order_create_table']);
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
