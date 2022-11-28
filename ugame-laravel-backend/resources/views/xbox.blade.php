@@ -131,127 +131,21 @@
                     </select>
                 </div>
 
-                <hr id = "line" size="3" width="90%" color="black"> 
+                <hr id = "line" size="3" width="90%" color="black">
 
+                @foreach($xboxProducts as $product)
                 <div class = "game_collection">
-                    <div class = "game_section" id = "game1">
-                        <div class = "single_box">
+                    <div class = "game_section">
+                        <div class = "single_box">  
                         </div>
-                        <h4 class = "game_price"> £49.99 </h4>
-                        <h6 class = "game_name"> Elden Ring <br> [Xbox Series X]</h4>
-                        <p id = "game_attributes">(RPG/16+)</p>
+                        <h4 class = "game_price"> £{{$product->price}} </h4>
+                        <h6 class = "game_name"> {{$product->title}} <br> [{{$product->platform}}]</h4>
+                        <p id = "game_attributes">({{$product->genre}}/{{$product->rating}}+)</p>
                         <button  class = "atb_button" type="button">Add to Basket</button>
                     </div>
+                </div>
+                @endforeach 
 
-                    <div class = "game_section" id = "game2">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £41.99 </h4>
-                        <h6 class = "game_name"> Resident Evil Village <br> [Xbox Series X]</h4>
-                        <p id = "game_attributes">(Horror/18+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game3">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £54.99 </h4>
-                        <h6 class = "game_name"> Forza Horizon 5 <br> [Xbox Series X]</h4>
-                        <p id = "game_attributes">(Racing/3+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game4">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £59.99 </h4>
-                        <h6 class = "game_name"> NBA 2K23 <br> [Xbox Series X]</h4>
-                        <p id = "game_attributes">(Sport/3+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game5">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £24.99 </h4>
-                        <h6 class = "game_name"> Sonic Colours <br> [Xbox Series X]</h4>
-                        <p id = "game_attributes">(Platformer/7+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game6">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £54.99 </h4>
-                        <h6 class = "game_name"> Halo Infinite <br> [Xbox Series X]</h4>
-                        <p id = "game_attributes">(Shooter/16+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game7">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £54.99 </h4>
-                        <h6 class = "game_name"> Grand Theft Auto: The Trilogy <br> [Xbox Series X]</h4>
-                        <p id = "game_attributes">(Action Adventure/18+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game8">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £49.99 </h4>
-                        <h6 class = "game_name"> Control <br> [Xbox Series X]</h4>
-                        <p id = "game_attributes">(Action Adventure/16+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game9">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £15.99 </h4>
-                        <h6 class = "game_name"> Borderlands 3 <br> [Xbox Series X]</h4>
-                        <p id = "game_attributes">(Shooter/18+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game10">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £27.99 </h4>
-                        <h6 class = "game_name"> Life Strange True Colors <br> [Xbox Series X]</h4>
-                        <p id = "game_attributes">(Action Adventure/16+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game11">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £44.99 </h4>
-                        <h6 class = "game_name"> Soul Hackers 2 <br> [Xbox Series X]</h4>
-                        <p id = "game_attributes">(RPG/16+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game12">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £17.99 </h4>
-                        <h6 class = "game_name"> Forza Motorsport 7 <br> [Xbox One]</h4>
-                        <p id = "game_attributes">(Racing/3+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game13">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £25.99 </h4>
-                        <h6 class = "game_name"> Assassin's Creed Valhalla <br> [Xbox Series X]</h4>
-                        <p id = "game_attributes">(Action Adventure/18+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-                </div>       
-            </div>
             <div id = "cart_window">
                 <div class = "cart_sect">
                     <h1 id = "basket_title">Your basket</h1>

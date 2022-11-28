@@ -27,6 +27,7 @@ Route::get('/nintendo', [PageController::class,'nintendo']);
 Route::get('/basket', [PageController::class,'basket']);
 
 Route::get('/xbox', [PageController::class,'xbox']);
+Route::get('/xbox', [ProductsController::class,'xboxProducts']);
 
 Route::get('/playstation', [PageController::class,'playstation']);
 Route::get('/playstation', [ProductsController::class,'playstationProducts']);
