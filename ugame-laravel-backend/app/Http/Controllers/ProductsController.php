@@ -19,4 +19,9 @@ class ProductsController extends Controller {
         $xboxProducts = DB::select('select * from xboxProducts WHERE 1');
         return view('xbox', ['xboxProducts'=>$xboxProducts]);
     }
+
+    public function nintendoProducts(){
+        $nintendoProducts = DB::select('select * from nintendoProducts WHERE 1');
+        return view('nintendo', ['nintendoProducts'=>$nintendoProducts]);
+    }
 }

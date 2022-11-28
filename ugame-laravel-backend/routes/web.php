@@ -23,6 +23,7 @@ Route::get('/index', [PageController::class,'index']);
 Route::get('/index', [ProductsController::class,'indexProducts']);
 
 Route::get('/nintendo', [PageController::class,'nintendo']);
+Route::get('/nintendo', [ProductsController::class,'nintendoProducts']);
 
 Route::get('/basket', [PageController::class,'basket']);
 

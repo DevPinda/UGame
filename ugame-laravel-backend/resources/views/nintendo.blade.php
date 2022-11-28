@@ -129,126 +129,19 @@
                 </div>
 
                 <hr id = "line" size="3" width="90%" color="black"> 
-
+                
+                @foreach($nintendoProducts as $product)
                 <div class = "game_collection">
-                    <div class = "game_section" id = "game1">
+                    <div class = "game_section">
                         <div class = "single_box">
                         </div>
-                        <h4 class = "game_price"> £49.99 </h4>
-                        <h6 class = "game_name"> Kirby and the Forgotten Land<br> [Nintendo Switch]</h6>
-                        <p id = "game_attributes">(Platformer/7+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game2">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £44.99 </h4>
-                        <h6 class = "game_name"> Super Mario 3D World <br> [Nintendo Switch]</h6>
-                        <p id = "game_attributes">(Platformer/7+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game3">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £44.99 </h4>
-                        <h6 class = "game_name"> Mario Kart 8 Deluxe <br> [Nintendo Switch]</h6>
-                        <p id = "game_attributes">(Racing/7+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game4">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £49.99 </h4>
-                        <h6 class = "game_name"> Splatoon 3 <br> [Nintendo Switch]</h6>
-                        <p id = "game_attributes">(Shooter/7+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game5">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £49.99 </h4>
-                        <h6 class = "game_name"> Zelda - Breath of the Wild <br> [Nintendo Switch]</h6>
-                        <p id = "game_attributes">(Action Adventure/12+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game6">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £44.99 </h4>
-                        <h6 class = "game_name"> Super Mario Odessey <br> [Nintendo Switch]</h6>
-                        <p id = "game_attributes">(Platformer/7+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game7">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £44.99 </h4>
-                        <h6 class = "game_name"> Super Mario Bros. U <br> [Nintendo Switch]</h6>
-                        <p id = "game_attributes">(Platformer/7+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game8">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £52.99 </h4>
-                        <h6 class = "game_name"> Super Smash Bros. Ultimate <br> [Nintendo Switch]</h6>
-                        <p id = "game_attributes">(Fighting/12+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game9">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £49.99 </h4>
-                        <h6 class = "game_name"> Xenoblade Chronicles 2 <br> [Nintendo Switch]</h6>
-                        <p id = "game_attributes">(RPG/12+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game10">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £49.99 </h4>
-                        <h6 class = "game_name"> Xenoblade Chronicles 3 <br> [Nintendo Switch]</h6>
-                        <p id = "game_attributes">(RPG/12+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game11">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £44.99 </h4>
-                        <h6 class = "game_name"> Yoshi's Crafted World <br> [Nintendo Switch]</h6>
-                        <p id = "game_attributes">(Platformer/7+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game12">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £45.99 </h4>
-                        <h6 class = "game_name"> Donkey Kong Tropical Freeze <br> [Nintendo Switch]</h6>
-                        <p id = "game_attributes">(Platformer/3+)</p>
-                        <button  class = "atb_button" type="button">Add to Basket</button>
-                    </div>
-
-                    <div class = "game_section" id = "game13">
-                        <div class = "single_box">
-                        </div>
-                        <h4 class = "game_price"> £39.99 </h4>
-                        <h6 class = "game_name"> Captain Toad: Treasure Tracker <br> [Nintendo Switch]</h6>
-                        <p id = "game_attributes">(Platformer/3+)</p>
+                        <h4 class = "game_price"> £{{$product->price}} </h4>
+                        <h6 class = "game_name"> {{$product->title}} <br> [{{$product->platform}}]</h4>
+                        <p id = "game_attributes">({{$product->genre}}/{{$product->rating}}+)</p>
                         <button  class = "atb_button" type="button">Add to Basket</button>
                     </div>
                 </div>
-            </div>
+                @endforeach
 
             <div id = "cart_window">
                 <div class = "cart_sect">
