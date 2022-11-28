@@ -276,14 +276,15 @@
 }
 
 .game_section{
-    margin-right: 101px;
+    float: left;
+    margin-right: 110px;
     margin-bottom: 60px;
     display: inline-block;
 }
 
 .game_collection{
     margin-top: 60px;
-    margin-left: 110px;
+    margin-left: 120px;
 }
 
 .logo{
@@ -883,7 +884,6 @@
 }
 
 #checkout_button{
-
     margin-top: 20px;
     margin-left: 615px;
     height: 40px;
