@@ -57,6 +57,15 @@ Below we have added the names of the contributors including the features they ha
 - Developed basket functionality (script.js), the ability to add products to the basket; users can close and open their basket at any time and remove items from the basket. The basket window also displays the current number of items, the current total price, a table of chosen items and the checkout button.
 - Developed filtered search functionality (filter.js), users can filter through all game products by their attributes; genre, price range, age rating and platform.
 
+### <h3>Shingai Mutumbi</h3>
+
+- Created the required major database tables then migrated them:
+    - https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/Shingai/ugame-laravel-backend/database/migrations/2022_11_12_145144_create__insert_details_table.php
+    - https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/Shingai/ugame-laravel-backend/database/migrations/2022_11_12_145144_create__order_details_table%20-%20Copy.php
+    - https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/Shingai/ugame-laravel-backend/database/migrations/2022_11_16_115019_create_tablesinsert_table.php
+
+- contributed on the [about.blade.page]
+
 ## Pre-Requisites
 
 ### - Git Bash: https://git-scm.com/downloads
