@@ -783,13 +783,13 @@
 }
 
 #total_title{
+    font-family: 'Archivo Black';
     margin-left: 70px;
+    color: rgb(53, 53, 53);
     /*margin-top: 30px;*/
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     font-weight: bold;
     letter-spacing: -0.5px;
-    transform: scale(1,0.965);
 }
 
 .basket_table_{
@@ -815,21 +815,16 @@
     border-bottom: 0.5px solid rgb(126, 126, 126);
 }
 
-/*#table_row_d #item_quantity{
-    padding-right: 0px;
-}*/
-
 #top_headers{
-    background-color: rgb(86, 0, 112);
+    background-color: rgb(75, 0, 128);
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    transform: scale(1,0.965);
-    
+    font-family: 'Archivo', 700;
+    letter-spacing: -0.5px;
 }
 
 #top_headers th{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 10px;
     
 }
@@ -849,7 +844,6 @@
 
 #disp_title{
     font-family: Arial, Helvetica, sans-serif;
-    transform: scale(1,0.9);
     font-weight: bolder;  
     font-size: 17px;
 }
@@ -860,32 +854,37 @@
 }
 
 #close_button{
-    margin-top: 30px;
-    margin-left: 755px;
+    margin-top: 20px;
+    margin-left: 780px;
     border: none;
-    background-color: rgb(231, 0, 35);
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: rgb(50, 0, 89);
+    background-color: white;
+    text-decoration: underline;
     font-weight: bold;
     letter-spacing: -0.5px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
 #close_button:hover{
-    margin-top: 30px;
-    margin-left: 755px;
+    margin-top: 20px;
+    margin-left: 780px;
     border: none;
-    background-color: rgb(150, 0, 22);
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: rgb(50, 0, 89);
+    background-color: white;
+    text-decoration: underline;
     font-weight: bold;
     letter-spacing: -0.5px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
 #checkout_button{
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 615px;
+    margin-bottom: 50px;
     height: 40px;
     width: 200px;
     padding-bottom: 13px;
@@ -903,15 +902,16 @@
 }
 
 #checkout_button:hover{
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 615px;
+    margin-bottom: 50px;
     height: 40px;
     width: 200px;
     padding-bottom: 13px;
     padding-top: 7px;
     padding-right: 10px;
     font-size: 18px;
-    background-color: rgb(42, 0, 72);
+    background-color: rgb(32, 0, 55);
     color: white;
     border: none;
     font-family: Arial, Helvetica, sans-serif;

@@ -146,11 +146,11 @@
 
             <div id = "cart_window">
                 <div class = "cart_sect">
+                    <button id = "close_button">Close Basket</button>
                     <h1 id = "basket_title">Your basket</h1>
                     <h1 id = "total_title">Subtotal: </h1>
                     <table class = "basket_table_"></table>
                     <button id = "checkout_button">Checkout</button>
-                    <button id = "close_button">Close</button>
                 </div>
             </div>
             <script src="js/script.js"></script>

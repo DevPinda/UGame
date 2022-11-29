@@ -47,7 +47,6 @@ window.onload = function(){
                     local_items.map(data=>{
                         if (game_item.id == data.id){
                             game_item.item_num = data.item_num + 1;
-                            //console.log(game_item);
                         }
                         else{
                             list_of_products.push(data);
@@ -56,12 +55,9 @@ window.onload = function(){
                     list_of_products.push(game_item);
                     localStorage.setItem("game_items", JSON.stringify(list_of_products));
                     window.location.reload();
-        
-                    //console.log(local_items);
                 }
             }
         })
-    
     }
 
     const cart_table = cart_window.querySelector('table');
@@ -83,7 +79,6 @@ window.onload = function(){
     price_total_round = price_total.toFixed(2)
     total_title.innerHTML = price_total_round;
     
-
     basket_title.innerHTML = 'Your basket' + ' (' + item_num + ' Items)';
     title_total.innerHTML = 'Subtotal: ' + '£' + price_total_round;
    
@@ -104,9 +99,7 @@ window.onload = function(){
         });
     }
     cart_table.innerHTML = table_data;
-
 }
-
 
     function delete_game(item){
         del_item = document.getElementById(item);
