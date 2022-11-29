@@ -89,6 +89,8 @@
             <input type='integer' class='form-control' placeholder='No. Players' name='players'>
             <label>Stock</label>
             <input type='integer' class='form-control' placeholder='Stock' name='stock'>
+            <label>Developer</label>
+            <input type='text' class='form-control' placeholder='Developer' name='developer'>
             <input type="submit" value="Submit">
         </form>
     </div>       

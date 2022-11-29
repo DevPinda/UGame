@@ -27,6 +27,7 @@ return new class extends Migration
             $table->decimal('price');
             $table->string('productId');
             $table->string('supplierId');
+            $table->string('developer');
             if (Schema::hasTable('customerTable')){
                 $table->foreign('postcode')->references('Post_code')->on('Customer');
                 $table->foreign('postcode')->references('Post_code')->on('Customer');

@@ -7,6 +7,8 @@ use App\Customer;
 use DB;
 use App\Models\Customers;
 use App\Models\Products;
+use App\Models\User;
+use App\Models\Order;
 
 class UserController extends Controller
 {
@@ -51,6 +53,7 @@ class UserController extends Controller
         //$players = $request->input('players');
         $price = $request->input('price');
         $rating = $request->input('rating');
+        $developer = $request->input('developer');
         $data=array(
             'title'=>$title,
             'downloads'=>0,
@@ -61,10 +64,18 @@ class UserController extends Controller
             'stock'=>$stock,
             'orders'=>0,
             'price'=>$price,
-            'rating'=>$rating
+            'rating'=>$rating,
+            'developer'=>$developer
         );
         Products::insert($data);
         echo '<script>alert("Game added successfully")</script>';
         return view('admin');
+    }
+
+    public function get_customers()
+    {
+        $userList = User::all();
+        $orders = Order::all();
+        return view('deals', ['userlist'=>$userList, 'orders'=>$orders]);
     }
 }
