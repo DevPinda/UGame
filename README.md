@@ -42,6 +42,21 @@ Below we have added the names of the contributors including the features they ha
 - Installed and Setup Laravel Jetstream, LiveWire and other relevant dependencies for the Register and Login functionalities.
 - Created and Formatted the [README.md](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/README.md) file.
 
+### <h3>Tyler Gilkes<h3>
+
+- Designed the user interface of the website (multiple webpages) using Affinity Designer before implementation.
+- Designed the web graphics of the website.
+- Designed the ‘UGAME?’ logo using Affinity Designer.
+
+- Developed and built the entire user interface with web technologies: HTML, CSS and Javascript:
+
+- Responsible for all HTML and pages on the front-end (nintendo.blade.php, xbox.blade.php, playstation.blade.php, index.blade.php, about.blade.php (managed), contact.blade.php (managed) and the basket window) 
+- Responsible for all CSS and styling on the front-end (style.css)
+- Responsible for all Javascript on the front-end (search.js, script.js, filter.js and embedded Javascript into ‘blade.php’ files)
+- Developed live search bar functionality (search.js)
+- Developed basket functionality (script.js), the ability to add products to the basket; users can close and open their basket at any time and remove items from the basket. The basket window also displays the current number of items, the current total price, a table of chosen items and the checkout button.
+- Developed filtered search functionality (filter.js), users can filter through all game products by their attributes; genre, price range, age rating and platform.
+
 ## Pre-Requisites
 
 ### - Git Bash: https://git-scm.com/downloads
