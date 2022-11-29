@@ -1,75 +1,22 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Responsive Contact Us Page UI Design | Html CSS</title>
-		<link rel="stylesheet" href="s">
-	</head>
-	<body>
-		<section>
-			<div class="container">
-				<div class="contact-Infomation">
-					<div>
-						<h2>Contact Info</h2>
-						<ul class="information">
-							<li>
-								<span><img src=""></span>
-								<span>location <b><br>
-									</span>
-							</li>
-							<li>
-								<span><img src=""></span>
-								<span>U-Games</span>
-							</li>
-							<li>
-								<span><img src=""></span>
-								<span>number</span>
-							</li>
-						</ul>
-					</div>
-					<ul class="sci">
-						<li><a href="#"><img src=""></a></a></li>
-						<li><a href="#"><img src=""></a></a></li>
-						<li><a href="#"><img src=""></a></a></li>
-						<li><a href="#"><img src=""></a></a></li>
-						<li><a href="#"><img src=""></a></a></li>
-					</ul>
-				</div>
-				<div class="contactus-Form">
-					<h2>Send a Message</h2>
-					<div class="contactus-Box">
-						<div class="inputBox w60">
-							<input type="text" name="" required>
-							<span>First Name</span>
-						</div>
-						<div class="inputBox w60">
-							<input type="text" name="" required>
-							<span>Last Name</span>
-						</div>
-						<div class="inputBox w60">
-							<input type="text" name="" required>
-							<span>Email Address</span>
-						</div>
-						<div class="inputBox w60">
-							<input type="text" name="" required>
-							<span>Mobile Number</span>
-						</div>
-						<div class="inputBox w120">
-							<textarea name="" required></textarea>
-							<span>Write your message here...</span>
-						</div>
-						<div class="inputBox w120">
-							<input type="submit" value="Send">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/filter.js"></script>
+    <script defer src="js/search.js"></script>
+    
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/40ad289a3a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <title>UGame?</title>
 
-<<<<<<< Updated upstream
     <script>
         function del_item(e){
             let items = []
@@ -126,76 +73,6 @@
     </header>
 
     <!--SHARI START HTML HERE-->
-    <!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Responsive Contact Us Page UI Design | Html CSS</title>
-		<link rel="stylesheet" href="s">
-	</head>
-	<body>
-		<section>
-			<div class="container">
-				<div class="contact-Infomation">
-					<div>
-						<h2>Contact Info</h2>
-						<ul class="information">
-							<li>
-								<span><img src=""></span>
-								<span>location <b><br>
-									</span>
-							</li>
-							<li>
-								<span><img src=""></span>
-								<span>U-Games</span>
-							</li>
-							<li>
-								<span><img src=""></span>
-								<span>number</span>
-							</li>
-						</ul>
-					</div>
-					<ul class="sci">
-						<li><a href="#"><img src=""></a></a></li>
-						<li><a href="#"><img src=""></a></a></li>
-						<li><a href="#"><img src=""></a></a></li>
-						<li><a href="#"><img src=""></a></a></li>
-						<li><a href="#"><img src=""></a></a></li>
-					</ul>
-				</div>
-				<div class="contactus-Form">
-					<h2>Send a Message</h2>
-					<div class="contactus-Box">
-						<div class="inputBox w60">
-							<input type="text" name="" required>
-							<span>First Name</span>
-						</div>
-						<div class="inputBox w60">
-							<input type="text" name="" required>
-							<span>Last Name</span>
-						</div>
-						<div class="inputBox w60">
-							<input type="text" name="" required>
-							<span>Email Address</span>
-						</div>
-						<div class="inputBox w60">
-							<input type="text" name="" required>
-							<span>Mobile Number</span>
-						</div>
-						<div class="inputBox w120">
-							<textarea name="" required></textarea>
-							<span>Write your message here...</span>
-						</div>
-						<div class="inputBox w120">
-							<input type="submit" value="Send">
-						</div>
-					</div>
-				</div>
-			</div>
-            <html/>
-
-
 
     <div id = "cart_window">
         <div class = "cart_sect">
@@ -210,5 +87,3 @@
 </div>
 <body>  
 </div>
-=======
->>>>>>> Stashed changes
