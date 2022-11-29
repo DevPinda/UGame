@@ -50,12 +50,12 @@ Below we have added the names of the contributors including the features they ha
 
 - Developed and built the entire user interface with web technologies: HTML, CSS and Javascript:
 
-- Responsible for all HTML and pages on the front-end (nintendo.blade.php, xbox.blade.php, playstation.blade.php, index.blade.php, about.blade.php (managed), contact.blade.php (managed) and the basket window) 
-- Responsible for all CSS and styling on the front-end (style.css)
-- Responsible for all Javascript on the front-end (search.js, script.js, filter.js and embedded Javascript into ‘blade.php’ files)
-- Developed live search bar functionality (search.js)
-- Developed basket functionality (script.js), the ability to add products to the basket; users can close and open their basket at any time and remove items from the basket. The basket window also displays the current number of items, the current total price, a table of chosen items and the checkout button.
-- Developed filtered search functionality (filter.js), users can filter through all game products by their attributes; genre, price range, age rating and platform.
+- Responsible for all HTML and pages on the front-end ([nintendo.blade.php] (https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/views/nintendo.blade.php), [xbox.blade.php] (https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/views/xbox.blade.php), [playstation.blade.php] (https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/views/playstation.blade.php), [index.blade.php] (https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/views/index.blade.php), [about.blade.php](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/views/about.blade.php) (managed), [contact.blade.php](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/views/contact.blade.php) (managed) and the basket window) 
+- Responsible for all CSS and styling on the front-end ([style.css](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/public/css/style.css))
+- Responsible for all Javascript on the front-end ([search.js](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/public/js/search.js), [script.js](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/public/js/script.js), [filter.js](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/public/js/filter.js) and embedded Javascript into ‘blade.php’ files)
+- Developed live search bar functionality ([search.js](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/public/js/search.js))
+- Developed basket functionality ([script.js](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/public/js/search.js)), the ability to add products to the basket; users can close and open their basket at any time and remove items from the basket. The basket window also displays the current number of items, the current total price, a table of chosen items and the checkout button.
+- Developed filtered search functionality ([filter.js](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/public/js/filter.js)), users can filter through all game products by their attributes; genre, price range, age rating and platform.
 
 ### <h3>Shingai Mutumbi</h3>
 
