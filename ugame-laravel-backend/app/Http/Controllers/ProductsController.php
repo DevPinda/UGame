@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\DB;
 
 class ProductsController extends Controller {
     public function indexProducts(){
-        $indexProducts = DB::select('select * from products');
+        $indexProducts = DB::select('select * from products order by orders desc limit 25');
         return view('index', ['indexProducts'=>$indexProducts]);
     }
 
