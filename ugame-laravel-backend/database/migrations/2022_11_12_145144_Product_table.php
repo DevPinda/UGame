@@ -26,6 +26,7 @@ return new class extends Migration
             $table->string('publisher');
             $table->integer('downloads');
             $table->integer('orders');
+            $table->string('developer');
         }
     );}
     
