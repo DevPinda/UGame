@@ -455,6 +455,49 @@
     color: rgb(76, 76, 76);
 }
 
+.checkout_form{
+    margin-left: 139px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#delivery_choice{
+    width: 340px;
+    height: 40px;
+    letter-spacing: -0.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17.5px;
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: rgb(106, 106, 106);
+}
+
+#checkout_title{
+    transform: scale(1,0.965);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: -1px;
+}
+
+.input_fields_checkout{
+    margin-top: 20px;
+    width: 500px;
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(141, 141, 141);
+    padding-left: 10px;
+    padding-top: 5px;
+    font-family: Arial;
+    letter-spacing: -0.5px;
+    width: 340px;
+    color: rgb(76, 76, 76);
+}
+
 .input_fields :focus{
     width: 500px;
     height: 45px;
