@@ -55,7 +55,6 @@
 
             <ul id=register_basket>
                 <li><a id="sign_register" href="register"> Sign in or Register </a></li>
-                <!--<li><a class="basket" id = "basket_link" href="basket"><i class="fa-solid fa-basket-shopping"></i> Basket</a></li>-->
                 <button id = "basket_link" type="button">Basket</button><p id = "item_num_noti">0</p>
             </ul>
         </div>
@@ -86,7 +85,7 @@
                     It might take us a little longer than usual to reply to emails but we will aim to reply within 5 working days.
                 </p>
             </div>
-    </section>
+
     <div id = "cart_window">
         <div class = "cart_sect">
             <button id = "close_button">Close Basket</button>
