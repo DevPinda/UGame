@@ -6,7 +6,7 @@
     <script defer src="js/search.js"></script>
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/40ad289a3a.js" crossorigin="anonymous"></script>
@@ -14,10 +14,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <title>UGame?</title>
+
+    <script>
+        function del_item(e){
+            let items = []
+            JSON.parse(localStorage.getItem('game_items')).map(data =>{
+                if (data.id != e.parentElement.parentElement.children[0].textContent){
+                    items.push(data);
+                }
+            });
+            localStorage.setItem('game_items', JSON.stringify(items));
+            window.location.reload();
+        }
+    </script>
+
+
 </head>
  
 <body class = "all">
-<header>
+    <header>
         <div class = "slogan">
             <h6 id = "phrase"> <!--<marquee width="130%" text-align='center' >--> <img class = "white_logo" src = "images/UGAME logo (white).png" width = "100" height = "25"> Discover our latest releases.<!--</marquee>--></h6>
         </div>
@@ -47,52 +62,84 @@
         <div class="nav_bar">
             <nav>
                 <ul id=links>
+                    <li><a id="deals" href="index">HOME</a></li>
                     <li><a id="playstation" href="playstation">PLAYSTATION</a></li>
                     <li><a id="xbox" href="xbox">XBOX</a></li>
                     <li><a id="nintendo" href="nintendo">NINTENDO</a></li>
-                    <li><a id="deals" href="deals">DEALS</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
 
-    <div class = "game_form">
-    <h1>Admin</h1>
-        <form name="add-games" action="/store" method="post" style="width:70%; margin-left:15%;">
-            
-            @csrf
-            <label>Title</label>
-            <input type='text' placeholder='Title' name='title' class='form-control'>
-            <label>Platform</label>
-            <input type="text" class="form-control" placeholder="Platform" name="platform">
-            <label>Genre</label>
-            <select class='form-control' placeholder='Genre' name='genre'>
-                <option value='Action Adventure'>Action Adventure</option>
-                <option value='Platformer'>Platformer</option>
-                <option value='RPG'>RPG</option>
-                <option value='Horror'>Horror</option>
-                <option value='Shooter'>Shooter</option>
-                <option value='Fighting'>Fighting</option>
-                <option value='Racing'>Racing</option>
-                <option value='Sport'>Sport</option>
-            </select>
-            <label>Publisher</label>
-            <input type='text' class='form-control' placeholder='Publisher' name='publisher'>
-            <label>Price: £</label>
-            <input type='float' class='form-control' placeholder='Price' name='price'>
-            <label>Rating</label>
-            <input type='integer' class='form-control' placeholder='Rating' name='rating'>
-            <label>Release Date</label>
-            <input type="date" class='form-control' id="start" name="releaseDate" placeholder="2010-10-10">
-            <Label>Players</label>
-            <input type='integer' class='form-control' placeholder='No. Players' name='players'>
-            <label>Stock</label>
-            <input type='integer' class='form-control' placeholder='Stock' name='stock'>
-            <label>Developer</label>
-            <input type='text' class='form-control' placeholder='Developer' name='developer'>
-            <input type="submit" value="Submit">
-        </form>
-    </div>       
-</body>
-</html>
+
+@foreach($userlist as $product)
+    <div class = "game_collection">
+        <div class = "game_section">
+            <div class = "single_box">
+            </div>
+            <h4 class = "game_price"> £{{$product->name}} </h4>
+            <h6 class = "game_name"> {{$product->email}} <br> [{{$product->email}}]</h4>
+            <button  class = "atb_button" type="button">Add to Basket</button>
+        </div>
+    </div>
+    @endforeach 
+<div class='cards'>
+    <div class = "card">
+        <table>
+            <tr>
+                <th>User No</th>
+                <th>First name</th>
+                <th>Email Address</th>
+            </tr>
+        @foreach($userlist as $user)
+            <tr>
+                <td>#{{$user->id}}</td>
+                <td>{{$user->name}}</td>
+                <td>{{$user->email}}</td>
+            </tr>
+        @endforeach
+        </table>
+    </div>
+    <div class = "card">
+    <table>
+            <tr>
+                <th>Order No</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email Address</th>
+                <th>Post Code</th>
+            </tr>
+        @foreach($orders as $order)
+            <tr>
+                <td>#{{$order->orderId}}</td>
+                <td>{{$order->firstName}}</td>
+                <td>{{$order->lastName}}</td>
+                <td>{{$order->email}}</td>
+                <td>{{$order->postCode}}</td>
+            </tr>
+        @endforeach
+        </table>
+    </div>
+    <div class ="card">
+    <table>
+            <tr>
+                <th>Product ID</th>
+                <th>Title</th>
+                <th>Platform</th>
+                <th>Developer</th>
+                <th>Stock</th>
+                <th>No of Orders</th>
+            </tr>
+        @foreach($products as $prd)
+            <tr>
+                <td>#{{$prd->productsId}}</td>
+                <td>{{$prd->title}}</td>
+                <td>{{$prd->platform}}</td>
+                <td>{{$prd->developer}}</td>
+                <td>{{$prd->stock}}</td>
+                <td>#{{$prd->orders}}
+            </tr>
+        @endforeach
+        </table>
+    </div>
+</div>

@@ -69,13 +69,24 @@ class UserController extends Controller
         );
         Products::insert($data);
         echo '<script>alert("Game added successfully")</script>';
-        return view('admin');
+        return view('newItems');
     }
 
     public function get_customers()
     {
+        $currentDate = new \DateTime('NOW');
+        
         $userList = User::all();
-        $orders = Order::all();
-        return view('deals', ['userlist'=>$userList, 'orders'=>$orders]);
+        $orders = Order::whereDate('deliveryDate', '>=', $currentDate->format('Y-m-d H:i:s'))
+            ->get();
+        $products = Products::where('stock', '>', 0)
+            ->get();
+
+        return view('admin', ['userlist'=>$userList, 'orders'=>$orders, 'products'=>$products]);
+    }
+
+    public function get_stock()
+    {
+
     }
 }

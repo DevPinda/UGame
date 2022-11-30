@@ -13,6 +13,52 @@
     margin-right: -6px;
 }
 
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+}
+
+.card {
+    padding: 30px;
+    margin: 2%;
+    width: fit-content; /** doesnt work for fire fox */
+    height: fit-content;
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.8);
+    border-radius: 3px;
+    transition: 2s all;
+    cursor: pointer;
+}
+
+.cards:hover .cards {
+    filter: blur(3px);
+    opacity: -5;
+    transform: scale(.98);
+    box-shadow: none;
+}
+
+.cards th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.card:hover .cards:hover {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+    box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+}
+
+.card tr:nth-child(even){background-color: #f2f2f2;}
+
+.customers tr:hover {background-color: #ddd;}
+
 #search{
     display: inline-block;
     margin-left: 70px;

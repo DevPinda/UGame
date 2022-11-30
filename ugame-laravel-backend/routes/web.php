@@ -5,6 +5,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductsController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,10 +39,11 @@ Route::get('/playstation', [ProductsController::class,'playstationProducts']);
 //Route::get('/signin', [PageController::class,'signin']);
 
 Route::get('/deals', [PageController::class,'deals']);
+Route::get('/admin', [UserController::class,'get_customers']);
 
 Route::get('/checkout', [OrderController::class, 'insertform']);
 
-Route::get('/admin', [UserController::class, 'admin']);
+// Route::get('/admin', [UserController::class, 'admin']);
 
 Route::post('/store', [UserController::class,'store_products']);
 
