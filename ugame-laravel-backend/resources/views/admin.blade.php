@@ -126,18 +126,12 @@
                 <th>Product ID</th>
                 <th>Title</th>
                 <th>Platform</th>
-                <th>Developer</th>
-                <th>Stock</th>
-                <th>No of Orders</th>
             </tr>
         @foreach($products as $prd)
             <tr>
-                <td>#{{$prd->productsId}}</td>
+                <td>{{$prd->productsID}}</td>
                 <td>{{$prd->title}}</td>
                 <td>{{$prd->platform}}</td>
-                <td>{{$prd->developer}}</td>
-                <td>{{$prd->stock}}</td>
-                <td>#{{$prd->orders}}
             </tr>
         @endforeach
         </table>

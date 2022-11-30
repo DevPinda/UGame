@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        /**Schema::create('xboxProducts', function (Blueprint $table) {
+        Schema::create('xboxProducts', function (Blueprint $table) {
             $table->increments('productsID');
             $table->string('title');
             $table->string('platform');
@@ -21,7 +21,7 @@ return new class extends Migration
             $table->float('price');
             $table->integer('rating');
         }
-    );*/}
+    );}
 
     /**
      * Reverse the migrations.

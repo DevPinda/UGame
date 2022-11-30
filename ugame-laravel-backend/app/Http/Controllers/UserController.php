@@ -79,7 +79,7 @@ class UserController extends Controller
         $userList = User::all();
         $orders = Order::whereDate('deliveryDate', '>=', $currentDate->format('Y-m-d H:i:s'))
             ->get();
-        $products = Products::where('stock', '>', 0)
+        $products = Products::where('productsID', '>=', 0)
             ->get();
 
         return view('admin', ['userlist'=>$userList, 'orders'=>$orders, 'products'=>$products]);
