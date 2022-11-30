@@ -8,6 +8,7 @@ use App\models\Order;
 use DB;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Models\Orders;
 
 class OrderController extends Controller
 {
@@ -41,5 +42,15 @@ class OrderController extends Controller
         // return view('recipts');
         echo "Record inserted successfully.<br/>";
         echo '<a href = "/insert">Click Here</a> to go back.';
+        
+
+
+
+
+
+
+
+
+
         }
 }
