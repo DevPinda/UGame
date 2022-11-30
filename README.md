@@ -1,4 +1,10 @@
-# CS2TP-Group-27-Project-1
+# CS2TP27 - 'UGame?' Project
+
+<br>
+
+<p align="center">
+<img width="800" height="200" src="https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/public/images/UGAME%20logo%20(white).png">
+</p>
 
 ## Description
 
@@ -9,13 +15,13 @@ Repository containing source code for my University Team Project regarding a Ful
 The following repository will include source code consisting of the following languages, including Blade (HTML), CSS, JavaScript, Laravel Framework (PHP) and SQL.
 
 ## Table of Contents
+
 - [Contributors](#contributors)
 - [Detailed Contributions](#detailed-contributions)
 - [Pre-Requisites](#pre-requisites)
     - [Git](#--git-bash-httpsgit-scmcomdownloads)
     - [Composer](#--composer-httpsgetcomposerorg)
     - [XAMPP](#--xampp-httpswwwapachefriendsorgdownloadhtml)
-        - [Notes](#notes)
 - [Installation](#installation)
 
 ## Contributors
@@ -28,6 +34,7 @@ The following repository will include source code consisting of the following la
 6. AR127 (Awais Riaz)
 7. Shinga1 (Shingai Mutumbi)
 8. Shaharyar05-beep (Muhammad Shaharyar Hussain Shigry)
+
 
 ## Detailed Contributions
 
@@ -42,14 +49,12 @@ Below we have added the names of the contributors including the features they ha
 - Installed and Setup Laravel Jetstream, LiveWire and other relevant dependencies for the Register and Login functionalities.
 - Created and Formatted the [README.md](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/README.md) file.
 
-### <h3>Tyler Gilkes<h3>
+### <h3>Tyler Gilkes</h3>
 
 - Designed the user interface of the website (multiple webpages) using Affinity Designer before implementation.
 - Designed the web graphics of the website.
 - Designed the ‘UGAME?’ logo using Affinity Designer.
-
 - Developed and built the entire user interface with web technologies: HTML, CSS and Javascript:
-
 - Responsible for all HTML and pages on the front-end ([nintendo.blade.php](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/views/nintendo.blade.php), [xbox.blade.php](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/views/xbox.blade.php), [playstation.blade.php](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/views/playstation.blade.php), [index.blade.php](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/views/index.blade.php), [about.blade.php](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/views/about.blade.php) (managed), [contact.blade.php](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/views/contact.blade.php) (managed) and the basket window) 
 - Responsible for all CSS and styling on the front-end ([style.css](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/public/css/style.css))
 - Responsible for all Javascript on the front-end ([search.js](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/public/js/search.js), [script.js](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/public/js/script.js), [filter.js](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/public/js/filter.js) and embedded Javascript into ‘blade.php’ files)
@@ -59,14 +64,8 @@ Below we have added the names of the contributors including the features they ha
 
 ### <h3>Shingai Mutumbi</h3>
 
-- Created the required major database tables then migrated them:
-    - [Products] https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/Shingai/ugame-laravel-backend/database/migrations/2022_11_12_145144_create__insert_details_table.php
-    
-    - [order] https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/Shingai/ugame-laravel-backend/database/migrations/2022_11_12_145144_create__order_details_table%20-%20Copy.php
-
-    - [Customer] https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/Shingai/ugame-laravel-backend/database/migrations/2022_11_16_115019_create_tablesinsert_table.php
-
-- contributed on the [about.blade.page]
+- Developed the migrations of the required major database tables: [Products](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/Shingai/ugame-laravel-backend/database/migrations/2022_11_12_145144_create__insert_details_table.php), [Order](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/Shingai/ugame-laravel-backend/database/migrations/2022_11_12_145144_create__order_details_table%20-%20Copy.php) and [Customer](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/Shingai/ugame-laravel-backend/database/migrations/2022_11_16_115019_create_tablesinsert_table.php).
+- Developed the [about.blade.page](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/views/about.blade.php).
 
 ## Pre-Requisites
 
@@ -122,6 +121,6 @@ The comnmand below will generate the pre-coded tables for the database:
 
 ### 7.  Run PHP server
 
-The command below will start the server on the local connection with the usual URL of ```http://127.0.0.1@8000```:
+The command below will start the server on the local connection with the usual URL of: ```http://127.0.0.1@8000```
 
 - Run ```php artisan serve```
