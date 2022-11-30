@@ -54,5 +54,9 @@ class PageController extends Controller {
     function order_create_table($name){
         return view();
     }
+
+    function checkout_p(){
+        return view('checkout_p');
+    }
 }
 ?>
