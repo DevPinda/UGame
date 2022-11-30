@@ -40,8 +40,8 @@ Route::get('/playstation', [ProductsController::class,'playstationProducts']);
 
 Route::get('/deals', [PageController::class,'deals']);
 Route::get('/admin', [UserController::class,'get_customers']);
-
-Route::get('/checkout', [OrderController::class, 'insertform']);
+Route::get('/checkout_p', [PageController::class, 'checkout_p']);
+Route::get('/checkout', [OrderController::class, 'insertForm']);
 
 // Route::get('/admin', [UserController::class, 'admin']);
 
