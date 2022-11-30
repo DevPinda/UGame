@@ -1,3 +1,4 @@
+
 <?php
 
 namespace App\Http\Controllers;
@@ -42,15 +43,5 @@ class OrderController extends Controller
         // return view('recipts');
         echo "Record inserted successfully.<br/>";
         echo '<a href = "/insert">Click Here</a> to go back.';
-        
-
-
-
-
-
-
-
-
-
         }
 }

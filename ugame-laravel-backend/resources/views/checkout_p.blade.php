@@ -72,21 +72,47 @@
         </div>
     </header>
 
-    
-    <div class = "checkout_form">
+    <form
+    class = "checkout_form">
         <h2 id = "checkout_title">Checkout</h2>
-        <input class = "input_fields_checkout" type="text" placeholder=Name name='first_name'><br>
-        <input class = "input_fields_checkout" type="text" placeholder="example@gmail.com" name="email"><br>
-        <input class = "input_fields_checkout" type="text" placeholder="Post Code" name="postcode"><br>
+        <input class = "input_fields_checkout" type="text" placeholder=Name name='first_name'>
+        <br>
+        <input class = "input_fields_checkout" type="text" placeholder="example@gmail.com" name="email">
+        <br>
+        <input class = "input_fields_checkout" type="text" placeholder="Post Code" name="postcode">
+        <br>
         <select type="button" id = "delivery_choice" name = 'deliveryDate'>
             <option id = "delivery_choice" disabled selected>Delivery Choice</option>
-            <option id = "delivery_choice">Next Day Delivery</option>
-            <option id = "delivery_choice">Express Delivery</option>
-            <option id = "delivery_choice">Standard Delivery</option>
+            <option id = "delivery_choice">Next Day Delivery (5.99)</option>
+            <option id = "delivery_choice">Express Delivery (2.99)</option>
+            <option id = "delivery_choice">Standard Delivery (Free)</option>
         </select><br>
-        <input class = "input_fields_checkout" type="text" placeholder="Phone Number" name="phoneNumber"><br>
-        <input class = "input_fields_checkout" type="text" placeholder="Address" name="homeAddress"><br>
-    </div>
+        <input class = "input_fields_checkout" type="text" placeholder="Phone Number" name="phoneNumber">
+        <br>
+        <input class = "input_fields_checkout" type="text" placeholder="Address" name="homeAddress">
+        <br>
+        <br>
+        <button type="Submit" name="Submit" class="btn btn-outline-primary" > Proceed to checkout</button>
+    </form>
+
+    <div class ="checkout_basket"
+    ></div>
+
+    <?php
+        $sql = "SELECT * FROM users;";
+        $result = mysqli_query($conn,$sql);
+        $resultCheck= mysqli_num_rows($result);
+
+        if($resultCheck > 0){
+            while($row =mysqli_fetch_assoc($result)){
+                echo $row["user_uid"] . "<br>";
+            }
+        }
+
+    ?>
+
+ 
+
     <script src="js/script.js"></script>
 </div>
 <body>  

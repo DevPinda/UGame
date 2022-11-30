@@ -98,6 +98,11 @@ window.onload = function(){
             '</th><th>'+data.genre_age+'</th><th id = "item_quantity"> Qty: '+data.item_num+'</th><th id = "remove_item_"><a id = "remove_item_" href = "#" onclick = del_item(this)>Remove</a></th><tr>'
         });
     }
+ 
+
+
+
+
     cart_table.innerHTML = table_data;
 }
 
@@ -120,5 +125,3 @@ window.onload = function(){
         }
     }
    
-
-    
