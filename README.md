@@ -60,9 +60,11 @@ Below we have added the names of the contributors including the features they ha
 ### <h3>Shingai Mutumbi</h3>
 
 - Created the required major database tables then migrated them:
-    - https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/Shingai/ugame-laravel-backend/database/migrations/2022_11_12_145144_create__insert_details_table.php
-    - https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/Shingai/ugame-laravel-backend/database/migrations/2022_11_12_145144_create__order_details_table%20-%20Copy.php
-    - https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/Shingai/ugame-laravel-backend/database/migrations/2022_11_16_115019_create_tablesinsert_table.php
+    - [Products] https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/Shingai/ugame-laravel-backend/database/migrations/2022_11_12_145144_create__insert_details_table.php
+    
+    - [order] https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/Shingai/ugame-laravel-backend/database/migrations/2022_11_12_145144_create__order_details_table%20-%20Copy.php
+
+    - [Customer] https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/Shingai/ugame-laravel-backend/database/migrations/2022_11_16_115019_create_tablesinsert_table.php
 
 - contributed on the [about.blade.page]
 
