@@ -67,6 +67,12 @@ Below we have added the names of the contributors including the features they ha
 - Developed the migrations of the required major database tables: [Products](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/Shingai/ugame-laravel-backend/database/migrations/2022_11_12_145144_create__insert_details_table.php), [Order](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/Shingai/ugame-laravel-backend/database/migrations/2022_11_12_145144_create__order_details_table%20-%20Copy.php) and [Customer](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/Shingai/ugame-laravel-backend/database/migrations/2022_11_16_115019_create_tablesinsert_table.php).
 - Developed the [about.blade.page](https://github.com/DevPinda/CS2TP-Group-27-Project-1/blob/main/ugame-laravel-backend/resources/views/about.blade.php).
 
+### <h3>Keshav Parikh</h3>
+
+-Developed the Order processing (Checkout page)
+-CSS for Admin Page
+-Debugging (HTML,CSS,PHP)
+
 ## Pre-Requisites
 
 ### - Git Bash: https://git-scm.com/downloads
