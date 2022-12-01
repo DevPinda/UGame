@@ -80,6 +80,7 @@
     <div class = "game_collection">
         <div class = "game_section">
             <div class = "single_box">
+            <img src='{{$product->Images}}'>
             </div>
             <h4 class = "game_price"> £{{$product->price}} </h4>
             <h6 class = "game_name"> {{$product->title}} <br> [{{$product->platform}}]</h4>
