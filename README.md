@@ -75,9 +75,9 @@ Below we have added the names of the contributors including the features they ha
 
 ###<h3>Jahray Facey</h3>
 
--Obtained The Information for the products
--Assisted with Database
--Designed UI elements
+- Obtained The Information for the products
+- Assisted with Database
+- Designed UI elements
 
 ## Pre-Requisites
 
