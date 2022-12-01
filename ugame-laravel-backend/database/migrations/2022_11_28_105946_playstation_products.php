@@ -13,15 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-        /**Schema::create('playstationProducts', function (Blueprint $table) {
+        Schema::create('playstationProducts', function (Blueprint $table) {
             $table->increments('productsID');
             $table->string('title');
             $table->string('platform');
             $table->string('genre');
             $table->float('price');
             $table->integer('rating');
+            $table->string('Images');
+            $table->integer('Stock');
         }
-    );*/}
+    );}
 
     /**
      * Reverse the migrations.

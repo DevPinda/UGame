@@ -20,16 +20,26 @@
     margin: 10%;
 }
 
-.card {
-    padding: 30px;
-    margin: 2%;
-    width: fit-content; /** doesnt work for fire fox */
-    height: fit-content;
-    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.8);
-    border-radius: 3px;
-    transition: 2s all;
-    cursor: pointer;
+.cards1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
 }
+.cards2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+}
+.cards3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+}
+
+
 
 .cards:hover .cards {
     filter: blur(3px);
@@ -42,7 +52,7 @@
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #04AA6D;
+    background-color: #aa0404;
     color: white;
     border: 1px solid #ddd;
     padding: 8px;
@@ -102,7 +112,7 @@
 }
 
 #about_contact{
-    margin-left: 1290px;
+    margin-left: 1200px;
     display: inline-block;
     margin-top: -90px;
     margin-bottom: -200px;
@@ -1059,7 +1069,7 @@
 }
 
 #admin{
-    margin-left: 16px;
+    margin-left: 22px;
     text-decoration: none;
     color: rgb(52, 52, 52);
     font-weight: bold;

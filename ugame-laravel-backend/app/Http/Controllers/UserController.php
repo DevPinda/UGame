@@ -9,6 +9,10 @@ use App\Models\Customers;
 use App\Models\Products;
 use App\Models\User;
 use App\Models\Order;
+use App\Models\XboxProducts;
+use App\Models\PlayStationProducts;
+use App\Models\NintendoProducts;
+
 
 class UserController extends Controller
 {
@@ -79,10 +83,17 @@ class UserController extends Controller
         $userList = User::all();
         $orders = Order::whereDate('deliveryDate', '>=', $currentDate->format('Y-m-d H:i:s'))
             ->get();
-        $products = Products::where('stock', '>', 0)
+        $products = Products::where('Stock', '>', 0)
             ->get();
+        $xboxProduct = XboxProducts::where('Stock', '>', 0)->get();
+        $playstationProducts = PlayStationProducts::where('Stock', '>', 0)->get();
+        $nintendoPrdoucts = NintendoProducts::where('Stock', '>', 0)->get();
 
-        return view('admin', ['userlist'=>$userList, 'orders'=>$orders, 'products'=>$products]);
+        // $products = array_merge($aproducts, $xboxProduct, $playstationProducts,$nintendoPrdoucts);
+        // $products->add($xboxProduct, $playstationProducts, $nintendoPrdoucts);
+        
+
+        return view('admin', ['userlist'=>$userList, 'orders'=>$orders, 'products'=>$products, 'xproducts'=>$xboxProduct, 'pproducts'=>$playstationProducts, 'nproducts'=>$nintendoPrdoucts]);
     }
 
     public function get_stock()
