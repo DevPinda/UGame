@@ -24,4 +24,17 @@ class ProductsController extends Controller {
         $nintendoProducts = DB::select('select * from nintendoProducts WHERE 1');
         return view('nintendo', ['nintendoProducts'=>$nintendoProducts]);
     }
+
+    public function store_checkout(Request $request){
+        $first_name = $request->input('first_name');
+        $last_name = $request->input('last_name');
+        $email = $request->input('email');
+        $postcode = $request->input('postcode');
+        $phoneNumber = $request->input('phoneNumber');
+        $homeAddress = $request->input('homeAddress');
+        $deliveryDate = $request->input('deliveryDate');
+        return view('checkout_p');
+    }
+   
+
 }

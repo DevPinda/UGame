@@ -87,7 +87,8 @@ window.onload = function(){
     console.log("!")
     game_item_arr = JSON.parse(localStorage.getItem("game_items"));
     console.log(game_item_arr);
-    
+    document. getElementById("1").value = price_total_rounded;
+
     console.log("!")
     if (game_item_arr === null || game_item_arr.length == 0){
         table_data = 'No items in basket';

@@ -1,12 +1,10 @@
-
 <?php
-
 namespace App\Http\Controllers;
 
 
 use Illuminate\Http\Request;
 use App\models\Order;
-use DB;
+use Illuminate\Support\Facades\DB;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Models\Orders;
@@ -20,8 +18,8 @@ class OrderController extends Controller
         // $fullname = $first_name+" "+$last_name;
         $email = $request->input('email');
         $postcode = $request->input('postcode');
-        $purchaseDate = date("d:m:Y");
-        $deliveryDate = $request->input('deliveryDate');
+        $purchaseDate = date('Y-m-d H:i:s');
+        $deliveryDate = date('Y-m-d H:i:s');
         $phoneNumber = $request->input('phoneNumber');
         $homeAddress = $request->input('homeAddress');
         $price = $request->input('price');
