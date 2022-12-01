@@ -69,9 +69,9 @@ Below we have added the names of the contributors including the features they ha
 
 ### <h3>Keshav Parikh</h3>
 
--Developed the Order processing (Checkout page)
--CSS for Admin Page
--Debugging (HTML,CSS,PHP)
+- Developed the Order processing (Checkout page)
+- CSS for Admin Page
+- Debugging (HTML,CSS,PHP)
 
 ## Pre-Requisites
 
