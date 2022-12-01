@@ -37,3 +37,5 @@ Route::get('/order', [PageController::class, 'insertform']);
 Route::post('/order_create', [OrderController::class, 'order_create']);
 
 Route::post('/order_table_Create', [PageController:: class, 'order_create_table']);
+
+Route::get('/pastOrder', [PageController::class,'pastOrders']);

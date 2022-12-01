@@ -40,7 +40,10 @@ class PageController extends Controller {
         return view('ord_create');
     }
 
-
+    function pastOrders()
+    {
+        return view ('pastOrder');
+    }
 
     
     function order_create_table($name){
