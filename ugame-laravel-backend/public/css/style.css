@@ -20,16 +20,26 @@
     margin: 10%;
 }
 
-.card {
-    padding: 30px;
-    margin: 2%;
-    width: fit-content; /** doesnt work for fire fox */
-    height: fit-content;
-    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.8);
-    border-radius: 3px;
-    transition: 2s all;
-    cursor: pointer;
+.cards1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
 }
+.cards2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+}
+.cards3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+}
+
+
 
 .cards:hover .cards {
     filter: blur(3px);
