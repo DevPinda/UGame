@@ -21,6 +21,7 @@ return new class extends Migration
             $table->float('price');
             $table->integer('rating');
             $table->string('Images');
+            $table->integer('Stock');
         }
     );}
 

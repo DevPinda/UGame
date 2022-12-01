@@ -34,16 +34,13 @@ Route::get('/xbox', [ProductsController::class,'xboxProducts']);
 Route::get('/playstation', [PageController::class,'playstation']);
 Route::get('/playstation', [ProductsController::class,'playstationProducts']);
 
-// Route::post('/signin/{id}', [UserController::class,'checkStatus']);
 
-//Route::get('/signin', [PageController::class,'signin']);
 
 Route::get('/deals', [PageController::class,'deals']);
 Route::get('/admin', [UserController::class,'get_customers']);
 Route::get('/checkout_p', [PageController::class, 'checkout_p']);
 Route::get('/checkout', [OrderController::class, 'insertForm']);
 
-// Route::get('/admin', [UserController::class, 'admin']);
 
 Route::post('/store', [UserController::class,'store_products']);
 
@@ -51,9 +48,7 @@ Route::get('/about', [PageController::class,'about']);
 
 Route::get('/contact', [PageController::class,'contact']);
 
-// Route::post('/order_create', [OrderController::class, 'order_create']);
 
-// Route::post('/order_table_Create', [PageController:: class, 'order_create_table']);
 
 Route::middleware([
     'auth:sanctum',

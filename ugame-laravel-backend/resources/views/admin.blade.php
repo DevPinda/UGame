@@ -72,19 +72,10 @@
     </header>
 
 
-@foreach($userlist as $product)
-    <div class = "game_collection">
-        <div class = "game_section">
-            <div class = "single_box">
-            </div>
-            <h4 class = "game_price"> £{{$product->name}} </h4>
-            <h6 class = "game_name"> {{$product->email}} <br> [{{$product->email}}]</h4>
-            <button  class = "atb_button" type="button">Add to Basket</button>
-        </div>
-    </div>
-    @endforeach 
+
 <div class='cards'>
     <div class = "card">
+        <h1>List of all users</h1>
         <table>
             <tr>
                 <th>User No</th>
@@ -101,6 +92,7 @@
         </table>
     </div>
     <div class = "card">
+        <h1>List of Currently Unfullfilled Orders</h1>
     <table>
             <tr>
                 <th>Order No</th>
@@ -120,7 +112,10 @@
         @endforeach
         </table>
     </div>
-    <div class ="card">
+
+</div>
+<div class ="card">
+        <h1>Stocked Products</h1>
     <table>
             <tr>
                 <th>Product ID</th>
@@ -128,6 +123,58 @@
                 <th>Platform</th>
             </tr>
         @foreach($products as $prd)
+            <tr>
+                <td>{{$prd->productsID}}</td>
+                <td>{{$prd->title}}</td>
+                <td>{{$prd->platform}}</td>
+            </tr>
+        @endforeach
+        </table>
+    </div>
+<div>
+    <div class ="card">
+        <h1>Stocked Xbox Products</h1>
+    <table>
+            <tr>
+                <th>Product ID</th>
+                <th>Title</th>
+                <th>Platform</th>
+            </tr>
+        @foreach($xproducts as $prd)
+            <tr>
+                <td>{{$prd->productsID}}</td>
+                <td>{{$prd->title}}</td>
+                <td>{{$prd->platform}}</td>
+            </tr>
+        @endforeach
+        </table>
+    </div>
+    <div class ="card">
+        <h1>Stocked Playstation Products</h1>
+    <table>
+            <tr>
+                <th>Product ID</th>
+                <th>Title</th>
+                <th>Platform</th>
+            </tr>
+        @foreach($pproducts as $prd)
+            <tr>
+                <td>{{$prd->productsID}}</td>
+                <td>{{$prd->title}}</td>
+                <td>{{$prd->platform}}</td>
+            </tr>
+        @endforeach
+        </table>
+    </div>
+    <div class ="card">
+        <h1>Stocked Nintendo Products</h1>
+    <table>
+            <tr>
+                <th>Product ID</th>
+                <th>Title</th>
+                <th>Platform</th>
+            </tr>
+        @foreach($nproducts as $prd)
             <tr>
                 <td>{{$prd->productsID}}</td>
                 <td>{{$prd->title}}</td>
