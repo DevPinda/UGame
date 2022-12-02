@@ -85,7 +85,8 @@ Below we have added the names of the contributors including the features they ha
 - Aided in the backend and database requirements for the main index, playstation, xbox, nintendo pages 
 - wrote code for inputting all the required and in-use controllers 
 - Completed checkout page 
-- Deployed the website to a web server 
+- Deployed the website to a web server at http://200174572.cs2410-web01pvm.aston.ac.uk
+
 
 ### <h3>Muhammad Shaharyar Hussain Shigry</h3>
 - Contacts page HTML
