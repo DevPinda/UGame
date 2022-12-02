@@ -77,29 +77,17 @@
     <form name="add-games" action="/store_checkout" method="post" >
         @csrf
         <h2 id = "checkout_title">Checkout</h2>
-        <input class = "input_fields_checkout" type="text" placeholder='Name' name='first_name'>
-        <br>
-        <input class = "input_fields_checkout" type="text" placeholder='Last name' name='last_name'>
-        <br>
-        <input class = "input_fields_checkout" type="text" placeholder="example@gmail.com" name="email">
-        <br>
-        <input class = "input_fields_checkout" type="text" placeholder="Post Code" name="postcode">
-        <br>
+        <input class = "input_fields_checkout" type="text" placeholder=Name name='first_name'><br>
+        <input class = "input_fields_checkout" type="text" placeholder="example@gmail.com" name="email"><br>
+        <input class = "input_fields_checkout" type="text" placeholder="Post Code" name="postcode"><br>
         <select type="button" id = "delivery_choice" name = 'deliveryDate'>
             <option id = "delivery_choice" disabled selected>Delivery Choice</option>
-            <option id = "delivery_choice" value='+1 day'>Next Day Delivery (5.99)</option>
-            <option id = "delivery_choice" value='+3 day'>Express Delivery (2.99)</option>
-            <option id = "delivery_choice" value='+5 day'>Standard Delivery (Free)</option>
+            <option id = "delivery_choice">Next Day Delivery</option>
+            <option id = "delivery_choice">Express Delivery</option>
+            <option id = "delivery_choice">Standard Delivery</option>
         </select><br>
-        <input class = "input_fields_checkout" type="text" placeholder="Phone Number" name="phoneNumber">
-        <br>
-        <input class = "input_fields_checkout" type="text" placeholder="Address" name="homeAddress">
-        <br>
-        <input class = "input_fields_checkout" type="int" placeholder="Subtotal"  id='price_checkout' name='price'> 
-
-        <br>
-        <button type="Submit" name="Submit" class="btn new-button btn-outline-primary" onclick="checkout()"> Proceed to checkout</button>
-    </form>
+        <input class = "input_fields_checkout" type="text" placeholder="Phone Number" name="phoneNumber"><br>
+        <input class = "input_fields_checkout" type="text" placeholder="Address" name="homeAddress"><br>
     </div>
     
     <div class ="checkout_basket"></div>

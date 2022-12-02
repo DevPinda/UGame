@@ -119,14 +119,11 @@
                     <h6 id = "category_title"><b>Category: </b><strong>'Nintendo Games'</strong></h6>
                 </div>
 
-                <div class = "sort_by_filter">
-                    <label id = "sort_by_label">Sort By</label>
-                    <select name="sort_by" id="sort_by">
-                        <option value="best_sellers">Best Sellers</option>
-                        <option value="A-Z">Product Name A-Z</option>
-                        <option value="price_lth">Price Low to High</option>
-                        <option value="price_htl">Price High to Low</option>
-                    </select>
+                <div class = "game_summary">
+                    <p>
+                        Explore new worlds and meet iconic Nintendo characters with our wide range of Switch games. 
+                        You can browse all our Switch games here.
+                    </p>
                 </div>
 
                 <hr id = "line" size="3" width="90%" color="black"> 

@@ -64,8 +64,6 @@ window.onload = function(){
     const basket_title = document.getElementById('basket_title');
     const title_total = document.getElementById('total_title');
 
-
-
     const basket_noti = document.getElementById('item_num_noti');
     let item_num = 0;
     JSON.parse(localStorage.getItem("game_items")).map(data =>{
@@ -75,10 +73,15 @@ window.onload = function(){
 
     let price_total = 0;
     JSON.parse(localStorage.getItem("game_items")).map(data =>{
-        price_total = price_total + parseFloat(data.price.substring(2));
+        if (data.item_num == 1){
+            price_total = price_total + parseFloat(data.price.substring(2));
+        }
+        if (data.item_num > 1){
+            price_total = price_total + parseFloat(data.price.substring(2) * data.item_num);
+        }
     })
 
-    price_total_round = price_total.toFixed(2)
+    price_total_round = price_total.toFixed(2);
     total_title.innerHTML = price_total_round;
     localStorage.setItem("price",price_total_round);
 
@@ -98,7 +101,6 @@ window.onload = function(){
         table_data = 'No items in basket';
     }else{
         JSON.parse(localStorage.getItem("game_items")).map(data=>{
-
             table_data += '<tr id = "table_row_d"><th id = "game_id">'+data.id+'</th><th id = "disp_game_price">'+data.price+'</th><th id = "disp_title">'+data.title+
             '</th><th>'+data.genre_age+'</th><th id = "item_quantity"> Qty: '+data.item_num+'</th><th id = "remove_item_"><a id = "remove_item_" href = "#" onclick = del_item(this)>Remove</a></th><tr>'
         });
@@ -109,6 +111,7 @@ window.onload = function(){
 
 
     cart_table.innerHTML = table_data;
+    localStorage.setItem("basket_total", price_total_round);
 }
 const price_checkout = document.getElementById('price_checkout');
 price_checkout.innerHTML = price_total_round;

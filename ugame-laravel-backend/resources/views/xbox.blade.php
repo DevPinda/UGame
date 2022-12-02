@@ -122,14 +122,11 @@
                     <h6 id = "category_title"><b>Category: </b><strong>'Xbox Games'</strong></h6>
                 </div>
 
-                <div class = "sort_by_filter">
-                    <label id = "sort_by_label">Sort By</label>
-                    <select name="sort_by" id="sort_by">
-                        <option value="best_sellers">Best Sellers</option>
-                        <option value="A-Z">Product Name A-Z</option>
-                        <option value="price_lth">Price Low to High</option>
-                        <option value="price_htl">Price High to Low</option>
-                    </select>
+                <div class = "game_summary">
+                    <p>
+                        We’ve got everything from best selling franchises, blockbuster exclusives as well as upcoming games heading to Xbox Series X and Xbox One. 
+                        Check out all of our Xbox games here. 
+                    </p>
                 </div>
 
                 <hr id = "line" size="3" width="90%" color="black">

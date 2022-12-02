@@ -148,6 +148,50 @@ height: 50px;
     transform: scale(1,0.965);
 }
 
+#confirm_button{
+    margin-top: 20px;
+    height: 40px;
+    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-right: 10px;
+    font-size: 18px;
+    width: 120px;
+    background-color: rgb(75, 0, 128);
+    color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.game_summary{
+    width: 1000px;
+    margin-left: 112px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(85, 85, 85);
+    
+    font-size: 14px;
+}
+
+#confirm_button:hover{
+    margin-top: 20px;
+    height: 40px;
+    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-right: 10px;
+    font-size: 18px;
+    width: 120px;
+    background-color: rgb(40, 0, 68);
+    color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.fields_container{
+    margin-top: 40px;
+}
+
 #about_us{
     text-decoration: none;
     color: rgb(52, 52, 52);
