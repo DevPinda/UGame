@@ -72,8 +72,10 @@
     </header>
 
 
-
+<div class="container">
+<div class="row">
 <div class='cards'>
+<div class="col-lg-6">
     <div class = "card">
         <h1>List of all users</h1>
         <table>
@@ -91,6 +93,9 @@
         @endforeach
         </table>
     </div>
+    </div>
+
+    <div class="col-lg-6">
     <div class = "card">
         <h1>List of Currently Unfullfilled Orders</h1>
     <table>
@@ -112,9 +117,15 @@
         @endforeach
         </table>
     </div>
-
+    </div>
+    </div>
 </div>
-<div class ="card">
+</div>
+<div class="container">
+    <div class="row">
+
+<div class="col-lg-3">
+<div class ="card border">
         <h1>Stocked Products</h1>
     <table>
             <tr>
@@ -130,9 +141,11 @@
             </tr>
         @endforeach
         </table>
+<hr class="horizontal-line">
     </div>
-<div>
-    <div class ="card">
+    </div>
+<div class="col-lg-3">
+    <div class ="card border">
         <h1>Stocked Xbox Products</h1>
     <table>
             <tr>
@@ -148,8 +161,11 @@
             </tr>
         @endforeach
         </table>
+        <hr class="horizontal-line">
     </div>
-    <div class ="card">
+    </div>
+    <div class="col-lg-3">
+    <div class ="card border">
         <h1>Stocked Playstation Products</h1>
     <table>
             <tr>
@@ -165,8 +181,12 @@
             </tr>
         @endforeach
         </table>
+        <hr class="horizontal-line">
     </div>
-    <div class ="card">
+    </div>
+    
+    <div class="col-lg-3">
+    <div class ="card border">
         <h1>Stocked Nintendo Products</h1>
     <table>
             <tr>
@@ -182,5 +202,8 @@
             </tr>
         @endforeach
         </table>
+        <hr class="horizontal-line">
     </div>
+    </div>
+</div>
 </div>

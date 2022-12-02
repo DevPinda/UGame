@@ -73,7 +73,7 @@
         </div>
     </header>
 
-    
+    <div class="container form-container">
     <form name="add-games" action="/store_checkout" method="post" >
         @csrf
         <h2 id = "checkout_title">Checkout</h2>
@@ -100,6 +100,7 @@
         <br>
         <button type="Submit" name="Submit" class="btn btn-outline-primary" > Proceed to checkout</button>
     </form>
+    </div>
     
     <div class ="checkout_basket"
     ></div>

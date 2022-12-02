@@ -3,6 +3,10 @@
     src: url(PressStart2PRegular.ttf);
 }
 
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+
 .logo{
     display: inline-block;
 }
@@ -13,11 +17,24 @@
     margin-right: -6px;
 }
 
+.card{
+height: 150%;
+}
+
+.border{
+border: 5px solid #D310DC !important;
+}
+
+.horizontal-line{
+margin-top: 5px;
+}
+
 .cards {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .cards1 {
@@ -52,7 +69,7 @@
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #aa0404;
+    background-color: #6406f8;
     color: white;
     border: 1px solid #ddd;
     padding: 8px;
@@ -65,7 +82,13 @@
     box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
 }
 
+
 .card tr:nth-child(even){background-color: #f2f2f2;}
+
+.form-container{
+text-align: center;
+margin-top: 50px;
+}
 
 .customers tr:hover {background-color: #ddd;}
 
