@@ -87,9 +87,9 @@
         <br>
         <select type="button" id = "delivery_choice" name = 'deliveryDate'>
             <option id = "delivery_choice" disabled selected>Delivery Choice</option>
-            <option id = "delivery_choice">Next Day Delivery (5.99)</option>
-            <option id = "delivery_choice">Express Delivery (2.99)</option>
-            <option id = "delivery_choice">Standard Delivery (Free)</option>
+            <option id = "delivery_choice" value='+1 day'>Next Day Delivery (5.99)</option>
+            <option id = "delivery_choice" value='+3 day'>Express Delivery (2.99)</option>
+            <option id = "delivery_choice" value='+5 day'>Standard Delivery (Free)</option>
         </select><br>
         <input class = "input_fields_checkout" type="text" placeholder="Phone Number" name="phoneNumber">
         <br>

@@ -84,6 +84,7 @@ Below we have added the names of the contributors including the features they ha
 - Created and completed the Admin page and all relevent backend connection associated with this page. 
 - Aided in the backend and database requirements for the main index, playstation, xbox, nintendo pages 
 - wrote code for inputting all the required and in-use controllers 
+- Completed checkout page 
 - Deployed the website to a web server 
 
 ### <h3>Muhammad Shaharyar Hussain Shigry</h3>
