@@ -86,6 +86,9 @@ Below we have added the names of the contributors including the features they ha
 - wrote code for inputting all the required and in-use controllers 
 - Deployed the website to a web server 
 
+### <h3>Muhammad Shaharyar Hussain Shigry</h3>
+- Contacts page HTML
+
 ## Pre-Requisites
 
 ### - Git Bash: https://git-scm.com/downloads
