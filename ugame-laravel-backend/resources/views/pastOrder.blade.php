@@ -84,33 +84,17 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php
-                        $orders = getOrders();
-    
-                        if(mysqli_num_rows($orders) > 0)
-                        {
-                            foreach($orders as $product){
-                             ?>
-                                <tr>
-                                    <td> <?= $product['orderId']; ?> </td>
-                                    <td> <?= $product['emailAddress']; ?> </td>
-                                    <td> <?= $product['productId']; ?> </td>
-                                    <td> <?= $product['price']; ?> </td>
-                                    <td> <?= $product['purchaseDate']; ?> </td>
-                                </tr>
-                             <?php
-                            }
-                        } else {
-                            ?>
-                                <tr>
-                                    <td colspan="4"> No past orders</td>
-                                </tr>
 
-                            <?php
-                        }
-    
-                     ?>
-                        
+
+                        @foreach($orders as $order)
+                        <tr>
+                            <td>#{{$order->orderId}}</td>
+                            <td>{{$order->firstName}}</td>
+                            <td>{{$order->lastName}}</td>
+                            <td>{{$order->email}}</td>
+                            <td>{{$order->postCode}}</td>
+                        </tr>
+                        @endforeach
                     </tbody>
                  </table>
 

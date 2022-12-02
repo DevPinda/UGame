@@ -57,4 +57,10 @@ class OrderController extends Controller
         }
         echo '<a href = "/">Click Here</a> to go back.<br/>';
         }
+
+        function past_orders()
+        {
+            $order = Order::all();
+            return view('pastOrder', ['orders'=>$order]);
+        }
 }

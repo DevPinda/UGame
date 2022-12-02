@@ -20,6 +20,7 @@ use App\Http\Controllers\ProductsController;
 Route::get('/', [PageController::class,'index']);
 Route::get('/', [ProductsController::class,'indexProducts']);
 Route::post('/store_checkout', [OrderController::class,'insertform']);
+Route::get('/order', [OrderController::class, 'past_orders']);
 
 Route::get('/index', [PageController::class,'index']);
 Route::get('/index', [ProductsController::class,'indexProducts']);

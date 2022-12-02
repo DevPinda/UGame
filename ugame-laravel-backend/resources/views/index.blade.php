@@ -42,6 +42,7 @@
                     <li><a id="about_us" href="about">ABOUT</a></li>
                     <li><a id="contact" href="contact">CONTACT</a></li>
                     <li><a id="admin" href="admin">ADMIN</a></li>
+                    <li><a id="past_order" href="order">ORDER</a></li>
                 </ul>
             </div>
 
