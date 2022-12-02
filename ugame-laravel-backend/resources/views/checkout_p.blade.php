@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <script defer src="js/script.js"></script>
     <script defer src="js/search.js"></script>
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/40ad289a3a.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-    <title>UGame?</title>
-    <script>
-        function del_item(e){
-            let items = []
-            JSON.parse(localStorage.getItem('game_items')).map(data =>{
-                if (data.id != e.parentElement.parentElement.children[0].textContent){
-                    items.push(data);
-                }
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/40ad289a3a.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+        <title>UGame?</title>
+        <script>
+            function del_item(e){
+                let items = []
+                JSON.parse(localStorage.getItem('game_items')).map(data =>{
+                    if (data.id != e.parentElement.parentElement.children[0].textContent){
+                        items.push(data);
+                    }
             });
             localStorage.setItem('game_items', JSON.stringify(items));
             window.location.reload();
         }
-    </script>
+        </script>
 </head>
- 
+
 <body class = "all">
     <header>
         <div class = "slogan">
@@ -50,6 +50,7 @@
                 <button id = "basket_link" type="button">Basket</button><p id = "item_num_noti">0</p>
             </ul>
         </div>
+
         <div class="nav_bar">
             <nav>
                 <ul id=links>
@@ -73,29 +74,36 @@
         <br>
         <input class = "input_fields_checkout" type="text" placeholder="Post Code" name="postcode">
         <br>
-        <input class = "input_fields_checkout" type="text" placeholder=Name name='first_name'><br>
-        <input class = "input_fields_checkout" type="text" placeholder="example@gmail.com" name="email"><br>
-        <input class = "input_fields_checkout" type="text" placeholder="Post Code" name="postcode"><br>
         <select type="button" id = "delivery_choice" name = 'deliveryDate'>
             <option id = "delivery_choice" disabled selected>Delivery Choice</option>
-            <option id = "delivery_choice" value='+1 day'>Next Day Delivery (5.99)</option>
-            <option id = "delivery_choice" value='+3 day'>Express Delivery (2.99)</option>
-            <option id = "delivery_choice" value='+5 day'>Standard Delivery (Free)</option>
-            <option id = "delivery_choice">Next Day Delivery</option>
-            <option id = "delivery_choice">Express Delivery</option>
-            <option id = "delivery_choice">Standard Delivery</option>
+            <option id = "delivery_choice">Next Day Delivery (5.99)</option>
+            <option id = "delivery_choice">Express Delivery (2.99)</option>
+            <option id = "delivery_choice">Standard Delivery (Free)</option>
         </select><br>
         <input class = "input_fields_checkout" type="text" placeholder="Phone Number" name="phoneNumber">
         <br>
         <input class = "input_fields_checkout" type="text" placeholder="Address" name="homeAddress">
         <br>
         <input class = "input_fields_checkout" type="int" placeholder="Subtotal"  id='price_checkout' name='price'> 
-
         <br>
         <button type="Submit" name="Submit" class="btn new-button btn-outline-primary" onclick="checkout()"> Proceed to checkout</button>
-    </form>
-        <input class = "input_fields_checkout" type="text" placeholder="Phone Number" name="phoneNumber"><br>
-        <input class = "input_fields_checkout" type="text" placeholder="Address" name="homeAddress"><br>
+        </form>
     </div>
 
     <div class ="checkout_basket"></div>
+    <script src="js/script.js"></script>
+</div>
+<body>  
+
+<div id = "cart_window">
+        <div class = "cart_sect">
+            <button id = "close_button">Close Basket</button>
+            <h1 id = "basket_title">Your basket</h1>
+            <h1 id = "total_title">Subtotal: </h1>
+            <table class = "basket_table_"></table>
+            <form action = 'checkout_p'>
+                <button id = "checkout_button" href="checkout_p">Checkout</button>
+            </form>
+        </div>
+    </div>
+    
