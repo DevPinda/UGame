@@ -23,8 +23,8 @@ class OrderController extends Controller
         $phoneNumber = $request->input('phoneNumber');
         $homeAddress = $request->input('homeAddress');
         $price = $request->input('price');
-        $productId = $request->input('productId');
-        $supplierId = $request->input('supplierId');
+        $productId = '1';
+        $supplierId = '1';
         $data=array('firstName'=>$first_name,
             "lastName"=>$last_name,
             "purchaseDate"=>$purchaseDate,
@@ -38,8 +38,9 @@ class OrderController extends Controller
             "supplierId"=>$supplierId);
         // $DB = new 
         DB::table('orders')->insert($data);
+        
         // return view('recipts');
         echo "Record inserted successfully.<br/>";
-        echo '<a href = "/insert">Click Here</a> to go back.';
+        echo '<a href = "/">Click Here</a> to go back.';
         }
 }

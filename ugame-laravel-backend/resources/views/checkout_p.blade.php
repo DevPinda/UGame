@@ -1,15 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
  
 <head>
     <script defer src="js/script.js"></script>
-    <script defer src="js/filter.js"></script>
     <script defer src="js/search.js"></script>
-    
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/40ad289a3a.js" crossorigin="anonymous"></script>
@@ -24,17 +21,17 @@
             JSON.parse(localStorage.getItem('game_items')).map(data =>{
                 if (data.id != e.parentElement.parentElement.children[0].textContent){
                     items.push(data);
-
                 }
             });
             localStorage.setItem('game_items', JSON.stringify(items));
             window.location.reload();
         }
     </script>
-</head>
 
-<div class = "all">
-    <body>
+
+</head>
+ 
+<body class = "all">
     <header>
         <div class = "slogan">
             <h6 id = "phrase"> <!--<marquee width="130%" text-align='center' >--> <img class = "white_logo" src = "images/UGAME logo (white).png" width = "100" height = "25"> Discover our latest releases.<!--</marquee>--></h6>
@@ -58,9 +55,10 @@
             <ul id=register_basket>
                 <li><a id="sign_register" href="register"> Sign in or Register </a></li>
                 <!--<li><a class="basket" id = "basket_link" href="basket"><i class="fa-solid fa-basket-shopping"></i> Basket</a></li>-->
+                <button id = "basket_link" type="button">Basket</button><p id = "item_num_noti">0</p>
             </ul>
         </div>
-        
+
         <div class="nav_bar">
             <nav>
                 <ul id=links>
@@ -72,6 +70,8 @@
             </nav>
         </div>
     </header>
+
+
 
     <div class="container form-container">
     <form name="add-games" action="/store_checkout" method="post" >
@@ -95,10 +95,10 @@
         <br>
         <input class = "input_fields_checkout" type="text" placeholder="Address" name="homeAddress">
         <br>
-        <input class = "input_fields_checkout" type="int" placeholder="Subtotal"Id="1"  name='price'> 
+        <input class = "input_fields_checkout" type="int" placeholder="Subtotal"  id='price_checkout' name='price'> 
 
         <br>
-        <button type="Submit" name="Submit" class="btn new-button btn-outline-primary" > Proceed to checkout</button>
+        <button type="Submit" name="Submit" class="btn new-button btn-outline-primary" onclick="checkout()"> Proceed to checkout</button>
     </form>
     </div>
     
@@ -107,3 +107,14 @@
 </div>
 <body>  
 </div>
+<div id = "cart_window">
+        <div class = "cart_sect">
+            <button id = "close_button">Close Basket</button>
+            <h1 id = "basket_title">Your basket</h1>
+            <h1 id = "total_title">Subtotal: </h1>
+            <table class = "basket_table_"></table>
+            <form action = 'checkout_p'>
+                <button id = "checkout_button" href="checkout_p">Checkout</button>
+            </form>
+        </div>
+    </div>

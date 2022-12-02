@@ -206,3 +206,15 @@
     </div>
 </div>
 </div>
+
+<div id = "cart_window">
+        <div class = "cart_sect">
+            <button id = "close_button">Close Basket</button>
+            <h1 id = "basket_title">Your basket</h1>
+            <h1 id = "total_title">Subtotal: </h1>
+            <table class = "basket_table_"></table>
+            <form action = 'checkout_p'>
+                <button id = "checkout_button" href="checkout_p">Checkout</button>
+            </form>
+        </div>
+    </div>

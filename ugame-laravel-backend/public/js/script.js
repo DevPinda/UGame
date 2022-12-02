@@ -64,6 +64,8 @@ window.onload = function(){
     const basket_title = document.getElementById('basket_title');
     const title_total = document.getElementById('total_title');
 
+
+
     const basket_noti = document.getElementById('item_num_noti');
     let item_num = 0;
     JSON.parse(localStorage.getItem("game_items")).map(data =>{
@@ -78,6 +80,8 @@ window.onload = function(){
 
     price_total_round = price_total.toFixed(2)
     total_title.innerHTML = price_total_round;
+    localStorage.setItem("price",price_total_round);
+
     
     basket_title.innerHTML = 'Your basket' + ' (' + item_num + ' Items)';
     title_total.innerHTML = 'Subtotal: ' + '£' + price_total_round;
@@ -87,7 +91,7 @@ window.onload = function(){
     console.log("!")
     game_item_arr = JSON.parse(localStorage.getItem("game_items"));
     console.log(game_item_arr);
-    document.getElementById("1").value = price_total_rounded;
+    
 
     console.log("!")
     if (game_item_arr === null || game_item_arr.length == 0){
@@ -105,6 +109,12 @@ window.onload = function(){
 
 
     cart_table.innerHTML = table_data;
+}
+const price_checkout = document.getElementById('price_checkout');
+price_checkout.innerHTML = price_total_round;
+
+function checkout(){
+    document.getElementById("price_checkout").value = price_total_round;
 }
 
     function delete_game(item){
