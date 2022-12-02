@@ -30,7 +30,7 @@ class PageController extends Controller {
     function signin(){
         return view('signin');
     }
-    
+
     function deals(){
         return view('deals');
     }
@@ -50,6 +50,12 @@ class PageController extends Controller {
     function insertform(){
         return view('ord_create');
     }
+
+    function pastOrders()
+    {
+        return view ('pastOrder');
+    }
+
 
     function order_create_table($name){
         return view();

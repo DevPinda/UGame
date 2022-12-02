@@ -49,7 +49,9 @@ Route::get('/about', [PageController::class,'about']);
 
 Route::get('/contact', [PageController::class,'contact']);
 
+Route::post('/order_table_Create', [PageController:: class, 'order_create_table']);
 
+Route::get('/pastOrder', [PageController::class,'pastOrders']);
 
 Route::middleware([
     'auth:sanctum',
