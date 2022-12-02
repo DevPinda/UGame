@@ -98,12 +98,11 @@
         <input class = "input_fields_checkout" type="int" placeholder="Subtotal"Id="1"  name='price'> 
 
         <br>
-        <button type="Submit" name="Submit" class="btn btn-outline-primary" > Proceed to checkout</button>
+        <button type="Submit" name="Submit" class="btn new-button btn-outline-primary" > Proceed to checkout</button>
     </form>
     </div>
     
-    <div class ="checkout_basket"
-    ></div>
+    <div class ="checkout_basket"></div>
     <script src="js/script.js"></script>
 </div>
 <body>  
