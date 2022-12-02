@@ -73,11 +73,18 @@ Below we have added the names of the contributors including the features they ha
 - CSS for Admin Page
 - Debugging (HTML,CSS,PHP)
 
-###<h3>Jahray Facey</h3>
+### <h3>Jahray Facey</h3>
 
 - Obtained The Information for the products
 - Assisted with Database
 - Designed UI elements
+
+### <h3>Victory Mpokosa</h3>
+- Worked on all the database tables within the migration (including creating the models): https://github.com/DevPinda/CS2TP-Group-27-Project-1/tree/main/ugame-laravel-backend/database 
+- Created and completed the Admin page and all relevent backend connection associated with this page. 
+- Aided in the backend and database requirements for the main index, playstation, xbox, nintendo pages 
+- wrote code for inputting all the required and in-use controllers 
+- Deployed the website to a web server 
 
 ## Pre-Requisites
 
