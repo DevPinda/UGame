@@ -89,6 +89,9 @@ Below we have added the names of the contributors including the features they ha
 - Completed checkout page 
 - Deployed the website to a web server at http://200174572.cs2410-web01pvm.aston.ac.uk
 
+ ### <h3>Awais Riaz</h3> 
+ - Front end implementation (images for the prodcuts that are in the database and storage of images)
+ - aided with the deployment of the database and website to the web server 
 
 ### <h3>Muhammad Shaharyar Hussain Shigry</h3>
 - Contacts page HTML
